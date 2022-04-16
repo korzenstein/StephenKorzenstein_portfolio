@@ -1,0 +1,164 @@
+// Main styles
+
+body {
+  background-color: #f8c2cc;
+  max-height: 100vh;
+// transition: all .3s ease-in-out;
+display: flex;
+flex-direction: column;
+width: 100vw;
+max-height: 100vh;
+overflow: hidden;
+}
+
+.wrapper {
+  width: 85%;
+  max-width: 1320px;
+  margin: 0 auto;
+// transition: all 0.3s ease-in-out;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+// Header Section
+
+.header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+h1 {
+  font-size: 3.5em;
+  padding: 0;
+  margin: 0;
+  span {
+    display: block;
+  }
+}
+
+
+
+// Navigation Section
+
+.navigation ul {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.main {
+    // transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+// Home Section
+.home {
+visibility: hidden;
+transition: all 0.5s ease-in-out;
+width: 100%;
+transform: translateX(-900%);
+order: 1;
+opacity: 0;
+display: flex;
+align-items: center;
+transition: all .5s ease-in-out;
+display: flex;
+flex-direction: row;
+
+.homeContainer {
+
+display: flex;
+flex-direction: row;
+
+
+    .homeText {
+        width: 65%;
+        
+    }
+    
+    .heroImg {
+        width: 30%;
+    }
+    
+
+}
+span {
+    width: 1rem;
+    display: inline-block;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    img {
+        stroke: black;
+        stroke-width: 10;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+}
+
+
+.about {
+    // display: none;
+    order: 1;
+        visibility: hidden;
+    opacity: 0;
+transition: all 0.5s ease-in-out;
+transform: translateX(-900%);
+    width: 100%;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    // transition: all 2s ease-in-out;
+  }
+}
+
+.portfolio {
+    // display: none;
+    order: 1;
+        visibility: hidden;
+    opacity: 0;
+transition: all 0.5s ease-in-out;
+transform: translateX(-900%);
+    width: 100%;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    // transition: all 2s ease-in-out;
+  }
+}
+
+.contact {
+    // display: none;
+    order: 1;
+    visibility: hidden;
+    opacity: 0;
+  transition: all 0.5s ease-in-out;
+transform: translateX(-100%);
+    width: 100%;
+  .wrapper {
+    display: block;
+    align-items: center;
+    // transition: all 2s ease-in-out;
+  }
+}
+
+.flex {
+    display: flex;
+}
+
+.active {
+  display: flex;
+  order: 0;
+visibility: visible;
+    opacity: 1;
+display: block;
+transition: all 0.5s ease-in-out;
+transform: translateX(0%);
+}

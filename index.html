@@ -5,11 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stephen Korzenstein</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Stephen Korzenstein</h1>
-      <h2>Coming Soon</h2>
+    <header class="header">
+      <div class="wrapper">
+        <h1>STEPHEN <span>KORZENSTEIN</span></h1>
+        <nav class="navigation">
+          <ul>
+            <li><a class="homeLink" href="#">Home</a></li>
+            <li><a class="aboutLink" href="#">About</a></li>
+            <li><a class="portfolioLink" href="#">Portfolio</a></li>
+            <li><a class="contactLink" href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
+    <div class="wrapper">
+      <main class="main">
+        <!-- Landing page section -->
+        <section id="home" class="home active">
+          <!-- <div class="wrapper"> -->
+          <div class="homeContainer">
+            <div class="homeText">
+              <h2>Front-End Web Developer</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+                working with React
+                <span class="spanImg"
+                  ><img src="./assets/atom.png" alt="atom"
+                /></span>
+                inventore mollitia quisquam ea! Dolorum explicabo atque vero
+                <span
+                  ><img src="./assets/curlyBraces.svg" alt="Curly braces"
+                /></span>
+                harum provident eveniet, neque odit, error sequi, ipsam suscipit
+                omnis aut ipsum doloremque.
+              </p>
+            </div>
+
+            <div class="heroImg">
+              <img src="./assets/Larry_5.png" alt="Friendly wave" />
+            </div>
+          </div>
+          <!-- </div> -->
+        </section>
+
+        <!-- About section -->
+        <section id="about" class="about">
+          <!-- <div class="wrapper"> -->
+          <h2>About</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+            inventore mollitia quisquam ea! Dolorum explicabo atque vero harum
+            provident eveniet, neque odit, error sequi, ipsam suscipit omnis aut
+            ipsum doloremque.
+          </p>
+          <h3>Skills + Tools</h3>
+          <!-- </div> -->
+        </section>
+
+        <!-- Portfolio section -->
+        <section id="portfolio" class="portfolio">
+          <!-- <div class="wrapper"> -->
+          <h2>Portfolio</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <!-- </div> -->
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact" class="contact">
+          <!-- <div class="wrapper"> -->
+          <h2>Contact</h2>
+          <p>
+            Hit me up using the super handy 'lil contact form or feel free to
+            reach out to me directly at the email below! Please send pics of
+            your dog.
+          </p>
+          <ul>
+            <li>LinkedIn</li>
+            <li>Twitter</li>
+            <li>GitHub</li>
+          </ul>
+          <!-- </div> -->
+        </section>
+      </main>
+    </div>
+    <script src="./scripts/main.js"></script>
   </body>
 </html>
