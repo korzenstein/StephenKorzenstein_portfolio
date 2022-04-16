@@ -36,12 +36,16 @@
 }
 
 @media (max-width: 640px) {
+
+
+  // body {
+  //   overflow-y: visible;
+  // }
   .navigation {
     position: fixed;
     transform: translateY(100);
     right: -981px;
-    z-index: 50;
-    // background-color: blue;
+    z-index: 50;    
     padding: 0 50px;
     transition: all 0.3s;
     width: 480px;
@@ -51,11 +55,14 @@
       align-items: flex-end;
       flex-direction: column;
       text-align: right;
+      li a {
+        font-size: 2rem;
+      }
     }
   }
   .navButton {
     display: block;
-    margin-top: 60px;
+    // margin-top: 60px;
     cursor: pointer;
     width: 1rem;
     height: 1rem;
@@ -75,7 +82,8 @@
     background: transparent;
     padding: 0;
     color: black;
-    font-size: 2.6rem;
+    width: 1rem;
+    height: 1rem;
     margin-bottom: 60px;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
@@ -88,5 +96,6 @@
 
 .navActive {
     right: 0px;
+    background-color: rgb(248, 194, 204, 0.9);
 }
 }

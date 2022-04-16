@@ -40,3 +40,32 @@ contactLink.addEventListener('click', () => {
 portfolioLink.addEventListener('click', () => {
     pageChange(portfolioSection);
 })
+
+// Portfolio container
+
+const projButton = document.querySelectorAll('.projButton')
+const projects = document.querySelectorAll('.project')
+
+
+projButton.forEach((bttn) => {
+  bttn.addEventListener("click", () => {
+    
+    // console.log(bttn.id)
+    let chosen = bttn.id;
+    console.log(chosen)
+    // let whatToDisplay = [...projects].filter(p => p.classList.contains(chosen))
+    // console.log(whatToDisplay)
+
+
+    projects.forEach(project =>  {
+        console.log(project)
+        project.classList.remove('display')
+        if(project.classList.contains(chosen)) {
+            // project.classList.add('display')
+            console.log(project.classList)
+            project.classList.add('display')
+        }
+
+    })
+  
+})})

@@ -19,11 +19,11 @@
         </button>
         <!-- Navigation -->
         <nav class="navigation">
-          <button class="navButton" onclick="navBar()">
-            <i aria-hidden="true" class="fa-solid fa-otter"></i>
-            <span class="sr-only">tap to close menu</span>
-          </button>
           <ul>
+            <button class="navButton" onclick="navBar()">
+              <i aria-hidden="true" class="fa-solid fa-otter"></i>
+              <span class="sr-only">tap to close menu</span>
+            </button>
             <li><a class="homeLink" href="#">Home</a></li>
             <li><a class="aboutLink" href="#">About</a></li>
             <li><a class="portfolioLink" href="#">Portfolio</a></li>
@@ -87,7 +87,41 @@
         <section id="portfolio" class="portfolio">
           <!-- <div class="wrapper"> -->
           <h2>Portfolio</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="portfolioContainer">
+            <div class="portfolioDisplay">
+              <div class="project one">
+                <!-- Project - Under the sea -->
+                <div class="imgContainer">
+                  <img src="./assets/underTheSea.png" alt="" />
+                </div>
+              </div>
+              <!-- Project - Calculator -->
+              <div class="project two">
+                <div class="imgContainer">
+                  <img src="./assets/calc.png" alt="" />
+                </div>
+              </div>
+              <!-- Project - Quiztionary -->
+              <div class="project three">
+                <div class="imgContainer">
+                  <img src="./assets/quiztionary.png" alt="" />
+                </div>
+              </div>
+              <!-- Project - Galerie LOCK -->
+              <div class="project four">
+                <div class="imgContainer">
+                  <img src="./assets/galerieLock.png" alt="" />
+                </div>
+              </div>
+            </div>
+
+            <div class="buttonContainer">
+              <button class="projButton" id="one">under the sea</button>
+              <button class="projButton" id="two">quiztionary</button>
+              <button class="projButton" id="three">3 theme calc</button>
+              <button class="projButton" id="four">galerie LOCK</button>
+            </div>
+          </div>
           <!-- </div> -->
         </section>
 
@@ -101,14 +135,28 @@
             your dog.
           </p>
           <ul>
-            <li>LinkedIn</li>
-            <li>Twitter</li>
-            <li>GitHub</li>
+            <li>
+              <span><img src="./assets/linkedin.png" alt="" /></span> /
+              skorzenstein
+            </li>
+            <li>
+              <span><img src="./assets/twitter.png" alt="" /></span> /
+              @skorzenstein
+            </li>
+            <li>
+              <span><img src="./assets/github2.png" alt="" /></span> /
+              korzenstein
+            </li>
           </ul>
           <!-- </div> -->
         </section>
       </main>
     </div>
+    <footer class="footer">
+      <div class="wrapper">
+        <p>designed + developed by Stephen Korzenstein</p>
+      </div>
+    </footer>
     <script src="./scripts/main.js"></script>
   </body>
 </html>
