@@ -1,3 +1,10 @@
+// Navigation Toggle Button Functionality (from Project 1)
+const nav = document.querySelector(".navigation");
+function navBar() {
+    nav.classList.toggle("navActive");
+}
+
+
 // Sections
 const homeSection = document.querySelector('.home');
 const aboutSection = document.querySelector('.about')
@@ -15,6 +22,8 @@ const pageChange = (section) => {
     contactSection.classList.remove('active')
     portfolioSection.classList.remove('active')
     section.classList.add('active')
+    nav.classList.toggle("navActive");
+
 }
 aboutLink.addEventListener('click', () => {
     pageChange(aboutSection);

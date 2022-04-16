@@ -64,6 +64,8 @@ h5 {
 
 p {
   font-family: "DeVinne";
+  font-size: 1.2rem;
+  line-height: 1.5rem;
 }
 
 ul,
@@ -454,15 +456,19 @@ h1 span {
   width: 30%;
 }
 .home span {
-  width: 1rem;
+  width: 1.4rem;
   display: inline-block;
   opacity: 1;
+  position: relative;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 .home span img {
   stroke: black;
   stroke-width: 10;
+  position: absolute;
+  top: -1.1rem;
+  left: 0;
 }
 .home span:hover {
   opacity: 0.8;
@@ -551,6 +557,14 @@ h1 span {
           transform: translateX(0%);
 }
 
+.navButton {
+  display: none;
+}
+
+.navButtonToggle {
+  display: none;
+}
+
 a {
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
@@ -558,4 +572,92 @@ a {
 a:hover, a:focus {
   padding-bottom: 0.3rem;
   border-bottom: 2px solid black;
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 2.6rem;
+  }
+
+  .navigation ul {
+    gap: 1rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 2.1rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
+  .home p span {
+    width: 1rem;
+  }
+  .home p span img {
+    stroke: black;
+    stroke-width: 10;
+    position: absolute;
+    top: -0.8rem;
+    left: 0;
+  }
+}
+@media (max-width: 640px) {
+  .navigation {
+    position: fixed;
+    -webkit-transform: translateY(100);
+            transform: translateY(100);
+    right: -981px;
+    z-index: 50;
+    padding: 0 50px;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    width: 480px;
+    height: 100vh;
+  }
+  .navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: right;
+  }
+
+  .navButton {
+    display: block;
+    margin-top: 60px;
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    font-size: 2.3rem;
+    color: black;
+    background: transparent;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .navButtonToggle {
+    display: block;
+    margin-left: auto;
+    background: transparent;
+    padding: 0;
+    color: black;
+    font-size: 2.6rem;
+    margin-bottom: 60px;
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  .navActive {
+    right: 0px;
+  }
 }
