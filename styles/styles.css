@@ -350,8 +350,9 @@ html {
   overflow: hidden;
 }
 
-body {
+.bodyContainer {
   background-color: #f8c2cc;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
