@@ -462,6 +462,7 @@ h1 span {
   position: relative;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 .home span img {
   stroke: black;
@@ -602,9 +603,19 @@ h1 span {
   display: none;
 }
 
+.contact .contactText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.portfolio h2 {
+  margin: 1rem 0 0.3rem 0;
+}
+
 .portfolioContainer {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,10 +631,11 @@ h1 span {
           justify-content: center;
 }
 .portfolioContainer .portfolioDisplay {
-  border: 1px solid black;
-  border-radius: 10px;
-  width: 80%;
-  height: 70%;
+  border: 4px solid black;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding: 0.9rem;
+  width: 100%;
+  height: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -649,6 +661,52 @@ h1 span {
   display: -ms-flexbox;
   display: flex;
   border: none;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.portfolioContainer .portfolioDisplay .project .imgContainer {
+  width: 40%;
+}
+.portfolioContainer .portfolioDisplay .project .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 55%;
+  margin-left: 1.2rem;
+}
+.portfolioContainer .portfolioDisplay .project .content h4 {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+.portfolioContainer .portfolioDisplay .project .content p {
+  font-size: 0.9rem;
+  margin: 0.2rem 0 0 0;
+}
+.portfolioContainer .portfolioDisplay .project .content p span {
+  width: 1.4rem;
+  display: inline-block;
+  opacity: 1;
+  position: relative;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+.portfolioContainer .portfolioDisplay .project .content p span img {
+  stroke: black;
+  stroke-width: 10;
+  position: absolute;
+  top: -1.1rem;
+  left: 0;
+}
+.portfolioContainer .portfolioDisplay .project .content p span:hover {
+  opacity: 0.8;
 }
 .portfolioContainer .portfolioDisplay .display {
   opacity: 1;
@@ -656,13 +714,12 @@ h1 span {
   display: -ms-flexbox;
   display: flex;
   height: 90%;
+  width: 90%;
   -webkit-box-ordinal-group: 1;
       -ms-flex-order: 0;
           order: 0;
   z-index: 20;
-  border: solid black 1px;
   visibility: visible;
-  width: 300px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -675,7 +732,7 @@ h1 span {
           justify-content: center;
   gap: 1rem;
   width: 80%;
-  height: 20%;
+  height: 25%;
 }
 .portfolioContainer .buttonContainer button {
   display: inline-block;
@@ -683,7 +740,7 @@ h1 span {
   border: none;
   padding: 0;
   cursor: pointer;
-  font-family: inherit;
+  font-family: "DeVinne";
   font-size: 0.8rem;
 }
 
@@ -714,21 +771,44 @@ a:hover, a:focus {
     font-size: 2.1rem;
   }
 
-  .home p {
+  .home .introText {
     font-size: 1rem;
   }
-  .home p span {
+  .home .introText span {
     width: 1rem;
   }
-  .home p span img {
+  .home .introText span img {
     stroke: black;
     stroke-width: 10;
     position: absolute;
     top: -0.8rem;
     left: 0;
   }
+
+  .portfolio h2 {
+    margin-bottom: 1.5rem;
+  }
+  .portfolio .portfolioContainer .portfolioDisplay .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio .portfolioContainer .portfolioDisplay .project .imgContainer {
+    display: none;
+  }
+  .portfolio .portfolioContainer .portfolioDisplay .project .content {
+    width: 90%;
+  }
+  .portfolio .portfolioContainer .portfolioDisplay .project .content p {
+    font-size: 1rem;
+  }
 }
 @media (max-width: 640px) {
+  .header .wrapper {
+    margin-top: 2.1rem;
+  }
+
   .navigation {
     position: fixed;
     -webkit-transform: translateY(100);
@@ -785,5 +865,45 @@ a:hover, a:focus {
   .navActive {
     right: 0px;
     background-color: rgba(248, 194, 204, 0.9);
+  }
+
+  .portfolio h2 {
+    margin-bottom: 1.3rem;
+  }
+  .portfolio .portfolioContainer .portfolioDisplay {
+    padding: 0.5rem;
+  }
+  .portfolio .portfolioContainer .portfolioDisplay .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio .portfolioContainer .portfolioDisplay .project .content {
+    width: 100%;
+  }
+  .portfolio .portfolioContainer .portfolioDisplay .project .content p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 380px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin: 0.3rem 0;
+  }
+
+  .portfolio h2 {
+    font-size: 1.2rem;
+    margin: 0.3rem 0;
+  }
+  .portfolio .portfolioContainer {
+    height: 70vh;
+  }
+  .portfolio .portfolioContainer .portfolioDisplay {
+    padding: 0 0.9rem 0 0;
   }
 }

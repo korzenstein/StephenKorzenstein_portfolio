@@ -71,21 +71,15 @@ display: flex;
 flex-direction: row;
 
 .homeContainer {
-
 display: flex;
 flex-direction: row;
-
-
     .homeText {
-        width: 65%;
-        
+        width: 65%;   
     }
     
     .heroImg {
         width: 30%;
     }
-    
-
 }
 span {
     width: 1.4rem;
@@ -93,6 +87,7 @@ span {
     opacity: 1;
     position: relative;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
     img {
         stroke: black;
         stroke-width: 10;
@@ -172,13 +167,6 @@ transform: translateX(-100%);
         opacity: 0.8;
       }
     
-
-
-
-
-
-
-    
   }
 }
 
@@ -190,7 +178,7 @@ transform: translateX(-100%);
   display: flex;
   order: 0;
 visibility: visible;
-    opacity: 1;
+opacity: 1;
 display: block;
 transition: all 0.5s ease-in-out;
 transform: translateX(0%);
@@ -212,3 +200,9 @@ transform: translateX(0%);
   }
 
 }
+
+
+// .filtering {
+//   filter: blur(4px);
+// }
+
