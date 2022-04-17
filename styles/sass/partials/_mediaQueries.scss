@@ -1,4 +1,4 @@
-@media (max-width: 1000px) {
+@media (max-width: 940px) {
   h1 {
     font-size: 2.6rem;
   }
@@ -10,21 +10,24 @@
   h2 {
     font-size: 1.4rem;
   }
+
+  .home {
+    .introText {
+            font-size: 1rem;
+    }
+  }
 }
 
 @media (max-width: 767px) {
 
-  // body {
-  //   overflow-x: hidden;
-  //   overflow-y: scroll;
-  // }
   h1 {
     font-size: 2.1rem;
   }
 
   .home {
     .introText {
-      font-size: 1rem;
+      font-size: 0.8rem;
+      line-height: 1.3rem;
 
       span {
         width: 1rem;
@@ -66,9 +69,6 @@
 }
 
 @media (max-width: 640px) {
-
-
-
   .header {
     .wrapper  {
       margin-top:2.1rem;
@@ -157,6 +157,31 @@
 }
 }
 
+@media (max-width: 480px) {
+  .home {
+    .homeContainer {
+      .homeText {
+        width: 85%;
+        .introText {
+          // width:85vw;
+        }
+      }
+    
+      .heroImg {
+        width: 15%;
+        position: relative;
+        margin-left: 1.5rem;
+        img {
+          position: absolute;
+          top: 0;
+          left: -2rem;
+          max-width: 300%;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 380px) {
   h1 {
     font-size: 1.5rem;
@@ -165,11 +190,41 @@
   h2 {
         font-size: 1.2rem;
         margin: 0.3rem 0;
+        line-height: 1.5rem;
+        margin-bottom: 1.4rem;
   }
 
-  .portfolio {
+  // Home section
+  .home {
+    .homeContainer {
+      .homeText {
+        width: 85%;
+  
+        .introText {
+          width:85vw;
+        }
+      }
+  
+      .heroImg {
+        width: 15%;
+        position: relative;
+        margin-left: 1.5rem;
+  
+        img {
+          position: absolute;
+          top: 0;
+          left: -2rem;
+          min-width: 55px;
+        }
+      }
+    }
+  }
+  
 
-    
+
+
+
+  .portfolio {
     h2 {
       font-size: 1.2rem;
       margin: 0.3rem 0;

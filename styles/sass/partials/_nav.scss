@@ -1,3 +1,11 @@
+// Navigation
+
+.navigation ul {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+}
+
 .navButton {
     display: none;
 }
