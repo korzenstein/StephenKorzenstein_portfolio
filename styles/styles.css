@@ -395,6 +395,21 @@ img {
   opacity: 0.8;
 }
 
+h2 {
+  border-bottom: 2px black solid;
+  display: inline-block;
+  color: #231f20;
+}
+
+.highlight {
+  background: linear-gradient(104deg, rgba(254, 203, 72, 0) 0.9%, rgb(254, 203, 72) 2.4%, rgba(254, 203, 72, 0.5) 5.8%, rgba(254, 203, 72, 0.1) 93%, rgba(254, 203, 72, 0.7) 96%, rgba(254, 203, 72, 0) 98%), linear-gradient(183deg, rgba(254, 203, 72, 0) 0%, rgba(254, 203, 72, 0.3) 7.9%, rgba(254, 203, 72, 0) 15%);
+  padding: 0.1rem 0.2rem;
+  -webkit-box-decoration-break: clone;
+  margin: 0;
+  border-radius: 1px;
+  text-shadow: -12px 12px 9.8px rgba(254, 203, 72, 0.7), 11px -11.1px 7.3px rgb(254, 203, 72), -18.1px -27.3px 30px rgb(254, 203, 72);
+}
+
 .navigation ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -481,6 +496,7 @@ h1 span {
 }
 .home .homeContainer .heroImg {
   width: 30%;
+  margin-left: auto;
 }
 
 .portfolio {
@@ -705,7 +721,7 @@ a:hover, a:focus {
   border-bottom: 2px solid black;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 960px) {
   h1 {
     font-size: 2.6rem;
   }
@@ -728,7 +744,7 @@ a:hover, a:focus {
   }
 
   .home .introText {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
     line-height: 1.3rem;
   }
   .home .introText span {
@@ -772,7 +788,7 @@ a:hover, a:focus {
             transform: translateY(100);
     right: -981px;
     z-index: 50;
-    padding: 0 50px;
+    padding: 0 2rem;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     width: 480px;
@@ -797,28 +813,43 @@ a:hover, a:focus {
 
   .navButton {
     display: block;
+    padding: 0;
     cursor: pointer;
     width: 1rem;
     height: 1rem;
     font-size: 2.3rem;
-    color: black;
+    border: none;
     background: transparent;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+    position: relative;
   }
+  .navButton .iconSpans {
+    position: absolute;
+    top: 1rem;
+    left: -5px;
+  }
+
   .navButtonToggle {
     display: block;
     margin-left: auto;
     background: transparent;
     padding: 0;
-    color: black;
+    border: none;
     width: 1rem;
     height: 1rem;
     margin-bottom: 60px;
     cursor: pointer;
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+    position: relative;
   }
+  .navButtonToggle .iconSpans {
+    position: absolute;
+    top: 1rem;
+    left: -5px;
+  }
+
   .navActive {
     right: 0px;
     background-color: rgba(248, 194, 204, 0.9);
@@ -860,6 +891,10 @@ a:hover, a:focus {
   }
 }
 @media (max-width: 380px) {
+  .header .wrapper {
+    margin-top: 2.2rem;
+  }
+
   h1 {
     font-size: 1.5rem;
   }
@@ -871,11 +906,8 @@ a:hover, a:focus {
     margin-bottom: 1.4rem;
   }
 
-  .home .homeContainer .homeText {
-    width: 85%;
-  }
   .home .homeContainer .homeText .introText {
-    width: 85vw;
+    width: 80vw;
   }
   .home .homeContainer .heroImg {
     width: 15%;
