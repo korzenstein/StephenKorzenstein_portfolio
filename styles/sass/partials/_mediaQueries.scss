@@ -159,7 +159,7 @@
         .content {
           width: 100%;
           p {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
           }
         }
       }
@@ -177,10 +177,13 @@
       .buttonContainer {
         display: flex;
         flex-wrap: wrap;
-        width: 85%;
+        width: 90%;
         height: 0;    
         .projButton {
           display: block;
+          .projLabel {
+            font-size: 0.8rem;
+          }
         }
       }
     }
@@ -191,6 +194,8 @@
       top: -1rem;
     }
   }
+
+  
 }
 
 @media (max-width: 480px) {
