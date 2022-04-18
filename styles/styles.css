@@ -352,6 +352,8 @@ html {
 
 .bodyContainer {
   background-color: #f8c2cc;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -400,6 +402,8 @@ h2 {
   border-bottom: 2px black solid;
   display: inline-block;
   color: #231f20;
+  line-height: 1.8rem;
+  padding-bottom: 0.65rem;
 }
 
 .highlight {
@@ -440,7 +444,7 @@ h2 {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 3.35em;
   padding: 0;
   margin: 0;
 }
@@ -597,13 +601,27 @@ h1 span {
   opacity: 0.8;
 }
 
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.socials .imgContainer {
+  width: 40%;
+  margin-left: auto;
+  position: absolute;
+  right: 0;
+  top: -2.7rem;
+}
+
 .portfolio h2 {
-  margin: 1rem 0 0.3rem 0;
+  margin: 1rem 0 1.2rem 0;
 }
 
 .portfolioContainer {
   width: 100%;
-  height: 60vh;
+  max-height: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,10 +638,11 @@ h1 span {
 }
 .portfolioContainer .portfolioDisplay {
   border: 4px solid black;
+  background-image: url(../assets/portBack.png);
   border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
   padding: 0.9rem;
   width: 100%;
-  height: 75%;
+  min-height: 75%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -633,6 +652,7 @@ h1 span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 1rem;
 }
 .portfolioContainer .portfolioDisplay .project {
   opacity: 0;
@@ -655,7 +675,8 @@ h1 span {
           align-items: center;
 }
 .portfolioContainer .portfolioDisplay .project .imgContainer {
-  width: 40%;
+  max-width: 30%;
+  min-width: 250px;
 }
 .portfolioContainer .portfolioDisplay .project .content {
   display: -webkit-box;
@@ -669,13 +690,13 @@ h1 span {
   margin-left: 1.2rem;
 }
 .portfolioContainer .portfolioDisplay .project .content h4 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 0;
   margin: 0;
 }
 .portfolioContainer .portfolioDisplay .project .content p {
-  font-size: 0.9rem;
-  margin: 0.2rem 0 0 0;
+  font-size: 1rem;
+  margin: 0.3rem 0;
 }
 .portfolioContainer .portfolioDisplay .display {
   opacity: 1;
@@ -696,21 +717,37 @@ h1 span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.5rem 1rem;
   width: 80%;
   height: 25%;
 }
-.portfolioContainer .buttonContainer button {
+.portfolioContainer .buttonContainer .projButton {
+  padding: 0;
+}
+.portfolioContainer .buttonContainer .projButton .projLabel {
+  font-family: "Gazpacho";
+  font-weight: 700;
   display: inline-block;
   background: none;
   border: none;
-  padding: 0;
   cursor: pointer;
-  font-family: "DeVinne";
-  font-size: 0.8rem;
+  font-size: 0.92rem;
+  position: relative;
+  padding: 0.3rem;
+  text-align: center;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.portfolioContainer .buttonContainer .projButton .projLabel:hover, .portfolioContainer .buttonContainer .projButton .projLabel:focus {
+  opacity: 0.5;
+}
+.portfolioContainer .buttonContainer .projButton input[type=radio] {
+  display: none;
+  position: absolute;
 }
 
 a {
@@ -745,7 +782,7 @@ a:hover, a:focus {
   }
 
   .home .introText {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
     line-height: 1.3rem;
   }
   .home .introText span {
@@ -780,7 +817,7 @@ a:hover, a:focus {
 }
 @media (max-width: 640px) {
   .header .wrapper {
-    margin-top: 2.1rem;
+    margin-top: 1.7rem;
   }
 
   .navigation {
@@ -856,6 +893,10 @@ a:hover, a:focus {
     background-color: rgba(248, 194, 204, 0.9);
   }
 
+  .home .introText {
+    font-size: 0.82rem;
+  }
+
   .portfolio h2 {
     margin-bottom: 1.3rem;
   }
@@ -875,12 +916,38 @@ a:hover, a:focus {
     font-size: 0.8rem;
   }
 }
+@media (max-width: 560px) {
+  .portfolio .portfolioContainer {
+    height: none;
+    gap: 1.6rem;
+  }
+  .portfolio .portfolioContainer .buttonContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 85%;
+    height: 0;
+  }
+  .portfolio .portfolioContainer .buttonContainer .projButton {
+    display: block;
+  }
+
+  .contact .imgContainer {
+    top: -1rem;
+  }
+}
 @media (max-width: 480px) {
   .home .homeContainer .homeText {
-    width: 85%;
+    width: 90%;
+  }
+  .home .homeContainer .homeText p {
+    margin: 0;
   }
   .home .homeContainer .heroImg {
-    width: 15%;
+    margin-top: 1rem;
+    width: 10%;
     position: relative;
     margin-left: 1.5rem;
   }
@@ -893,7 +960,7 @@ a:hover, a:focus {
 }
 @media (max-width: 380px) {
   .header .wrapper {
-    margin-top: 2.2rem;
+    margin-top: 1.4rem;
   }
 
   h1 {
@@ -924,10 +991,7 @@ a:hover, a:focus {
 
   .portfolio h2 {
     font-size: 1.2rem;
-    margin: 0.3rem 0;
-  }
-  .portfolio .portfolioContainer {
-    height: 70vh;
+    margin: 0.3rem 0 1rem 0;
   }
   .portfolio .portfolioContainer .portfolioDisplay {
     padding: 0 0.9rem 0 0;

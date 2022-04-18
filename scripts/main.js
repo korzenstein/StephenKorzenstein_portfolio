@@ -6,50 +6,47 @@ function navBar() {
 
 // Sections
 const homeSection = document.querySelector(".home");
-// const aboutSection = document.querySelector(".about");
 const contactSection = document.querySelector(".contact");
 const portfolioSection = document.querySelector(".portfolio");
+const body = document.querySelector(".bodyContainer");
+// const navActive = document.querySelector(".navActive");
 // Links
-// const aboutLink = document.querySelector(".aboutLink");
 const homeLink = document.querySelector(".homeLink");
 const portfolioLink = document.querySelector(".portfolioLink");
 const contactLink = document.querySelector(".contactLink");
 
 const pageChange = (section) => {
   homeSection.classList.remove("active");
-  // aboutSection.classList.remove("active");
   contactSection.classList.remove("active");
   portfolioSection.classList.remove("active");
   section.classList.add("active");
   nav.classList.toggle("navActive");
 };
-// aboutLink.addEventListener("click", () => {
-//   pageChange(aboutSection);
-// });
 
 homeLink.addEventListener("click", () => {
   pageChange(homeSection);
-  console.log('home')
+  // navActive.style.backgroundColor = '#f8c2cc'
+  body.style.backgroundColor = '#f8c2cc'
 });
 
 contactLink.addEventListener("click", () => {
   pageChange(contactSection);
-    console.log('contact')
-
+  // navActive.style.backgroundColor = '#fecb46'
+  body.style.backgroundColor = '#fecb46'
 });
 
 portfolioLink.addEventListener("click", () => {
   pageChange(portfolioSection);
-    console.log('port')
-
+  // navActive.style.backgroundColor = '#27bfd5'
+  body.style.backgroundColor = '#27bfd5'
 });
 
 // Portfolio container
 
-const projButton = document.querySelectorAll(".projButton");
+const projLabels = document.querySelectorAll(".projLabel");
 const projects = document.querySelectorAll(".project");
 
-projButton.forEach((bttn) => {
+projLabels.forEach((bttn) => {
   bttn.addEventListener("click", () => {
     // console.log(bttn.id)
     let chosen = bttn.id;
@@ -67,5 +64,9 @@ projButton.forEach((bttn) => {
     });
   });
 });
+
+// (() => {
+  
+// })();
 
 // Under the hood hovers

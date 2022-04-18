@@ -3,28 +3,30 @@
 
 
     h2 {
-        margin: 1rem 0 0.3rem 0;
+        margin: 1rem 0 1.2rem 0;
     }
 }
 
 
 .portfolioContainer {
     width: 100%;
-    height: 60vh;
+    max-height: 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:center;
     .portfolioDisplay {
         border: 4px solid black;
+        background-image: url(../assets/portBack.png);
         // border-radius: 10px;
         border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
         padding: 0.9rem;
         width: 100%;
-        height: 75%;
+        min-height: 75%;
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 1rem;
         // flex-direction: column;
 
         .project {
@@ -39,9 +41,11 @@
             border: none;
             gap: 1rem;
             align-items: center;
+            
 
             .imgContainer {
-                width: 40%;
+                max-width: 30%;
+                min-width: 250px;
             }
             .content {
                 display: flex;
@@ -49,36 +53,14 @@
                 width: 55%;
                 margin-left: 1.2rem;
                 h4 {
-                    font-size: 1rem;
+                    font-size: 1.1rem;
                     padding: 0;
                     margin: 0;
                 }
                 p {
-                    font-size: 0.9rem;
-                    margin: 0.2rem 0 0 0 ;
-                    // span {
-                    //     width: 1.4rem;
-                    //     display: inline-block;
-                    //     opacity: 1;
-                    //     position: relative;
-                    //     transition: all 0.2s ease-in-out;
-                    //     cursor: pointer;
-                    
-                    //     img {
-                    //         stroke: black;
-                    //         stroke-width: 10;
-                    //         position: absolute;
-                    //         top: -1.1rem;
-                    //         left: 0;
-                    //     }
-                    
-                    //     &:hover {
-                    //         opacity: 0.8;
-                    //     }
-                    // }
+                    font-size: 1rem;
+                    margin: 0.3rem 0;
                 }
-                
-            
             }
         }
 
@@ -98,18 +80,35 @@
     }
     .buttonContainer {
         display: flex;
-        justify-content: center;
-        gap: 1rem;
+        justify-content: space-between;
+        gap: 0.5rem 1rem;
         width: 80%;
         height: 25%;
-        button {
-            display: inline-block;
-            background: none;
-            border: none;
+        .projButton {
             padding: 0;
-            cursor: pointer;
-            font-family: "DeVinne";
-            font-size: 0.8rem;
+            .projLabel {
+                font-family: 'Gazpacho';
+                font-weight: 700;
+                display: inline-block;
+                background: none;
+                border: none;
+                cursor: pointer;
+                font-size: 0.92rem;
+                position: relative;
+                padding: 0.3rem;
+                text-align: center;
+                opacity: 1;
+                transition: all 0.2s ease-in-out;
+
+                &:hover,
+                &:focus {
+                    opacity: 0.5;
+                }
+            }
+            input[type="radio"] {
+                display: none;
+                position: absolute;
+            }
         }
     }
 

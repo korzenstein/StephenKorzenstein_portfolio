@@ -1,14 +1,8 @@
 .contact {
-    
     .contactText {
         display: flex;
+        
     }
-    // order: 1;
-    // visibility: hidden;
-    // opacity: 0;
-    // transition: all 0.5s ease-in-out;
-    // transform: translateX(-100%);
-    // width: 100%;
 
     ul {
         display: flex;
@@ -35,6 +29,18 @@
             opacity: 0.8;
         }
 
+    }
+}
+
+.socials {
+    display: flex;
+    position: relative;
+    .imgContainer {
+        width: 40%;
+        margin-left: auto;
+        position: absolute;
+        right: 0;
+        top: -2.7rem;
     }
 }
 
