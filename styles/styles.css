@@ -615,6 +615,9 @@ h1 span {
   top: -2.7rem;
 }
 
+.portfolio {
+  background-size: cover;
+}
 .portfolio h2 {
   margin: 1rem 0 1.2rem 0;
 }
@@ -635,11 +638,11 @@ h1 span {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url(../assets/portBack.png);
 }
 .portfolioContainer .portfolioDisplay {
+  background-image: url(../assets/portBack.png);
   width: 100%;
-  min-height: 75%;
+  min-height: 230px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -654,8 +657,6 @@ h1 span {
 .portfolioContainer .portfolioDisplay .project {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out;
   width: 0%;
   height: 0%;
   -webkit-box-ordinal-group: 2;
@@ -669,10 +670,17 @@ h1 span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transition: opacity 2s ease-in-out;
+  transition: opacity 2s ease-in-out;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 .portfolioContainer .portfolioDisplay .project .imgContainer {
   max-width: 30%;
   min-width: 250px;
+  margin-right: 1.5rem;
 }
 .portfolioContainer .portfolioDisplay .project .content {
   display: -webkit-box;
@@ -684,6 +692,8 @@ h1 span {
           flex-direction: column;
   width: 60%;
   margin-left: 1.2rem;
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 .portfolioContainer .portfolioDisplay .project .content h4 {
   font-size: 1.1rem;
@@ -706,8 +716,10 @@ h1 span {
           order: 0;
   z-index: 20;
   visibility: visible;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 .portfolioContainer .buttonContainer {
   display: -webkit-box;
@@ -805,7 +817,8 @@ a:hover, a:focus {
     display: none;
   }
   .portfolio .portfolioContainer .portfolioDisplay .project .content {
-    width: 90%;
+    width: 100%;
+    margin-left: 0;
   }
   .portfolio .portfolioContainer .portfolioDisplay .project .content p {
     font-size: 1rem;
@@ -896,9 +909,6 @@ a:hover, a:focus {
   .portfolio h2 {
     margin-bottom: 1.3rem;
   }
-  .portfolio .portfolioContainer .portfolioDisplay {
-    padding: 0.5rem;
-  }
   .portfolio .portfolioContainer .portfolioDisplay .project {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -923,7 +933,7 @@ a:hover, a:focus {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 90%;
+    width: 100%;
     height: 0;
   }
   .portfolio .portfolioContainer .buttonContainer .projButton {
