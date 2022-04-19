@@ -44,13 +44,14 @@ img {
   }
 }
 
+
 .iconSpansHome {
   width: 1.4rem;
   display: inline-block;
-  opacity: 1;
-  
+  opacity: none;
   position: relative;
   cursor: pointer;
+  color: rgb(0, 0, 0, 0);
   transition: all 2s ease-in-out;
 
   img {
@@ -60,11 +61,73 @@ img {
     position: absolute;
     top: -1.1rem;
     left: 0;
+  
   }
 
-  // &:hover {
-  //   opacity: 0.8;
-  // }
+}
+
+.react {
+  &::after {
+    content: "react.js";
+    color: inherit;
+    position: absolute;
+    top: -1.1rem;
+    left: 1.22rem;
+    opacity: inherit;
+    cursor: default;
+  }
+}
+
+.js {
+  &::after {
+    content: "javascript";
+    color: inherit;
+    position: absolute;
+        top: -1.1rem;
+    left: 1.25rem;
+    opacity: inherit;
+    cursor: default;
+  }
+}
+
+.css {
+  &::after {
+    content: "css";
+    color: inherit;
+    position: absolute;
+        top: -1.1rem;
+    left: 1.23rem;
+    opacity: inherit;
+    cursor: default;
+  }
+}
+
+.html {
+  &::after {
+    content: "html";
+    color: inherit;
+    position: absolute;
+    top: -1.1rem;
+        left: 1.25rem;
+    opacity: inherit;
+    cursor: default;
+  }
+}
+
+.github {
+  &::after {
+    content: "github";
+    color: inherit;
+    position: absolute;
+    top: -1.1rem;
+    left: 1.1rem;
+    opacity: inherit;
+    cursor: default;
+  }
+}
+
+.skillsAfter {
+  color: rgb(0, 0, 0, 1);
 }
 
 h2 {
@@ -102,3 +165,4 @@ h2 {
     -18.1px -27.3px 30px rgba(254, 203, 72, 1);
   //   color: rgb(254, 203, 72);
 }
+

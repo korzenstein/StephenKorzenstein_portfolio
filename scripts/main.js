@@ -36,19 +36,16 @@ const pageChange = (section) => {
 
 homeLink.addEventListener("click", () => {
   pageChange(homeSection);
-  // navActive.style.backgroundColor = '#f8c2cc'
   body.style.backgroundColor = "#f8c2cc";
 });
 
 contactLink.addEventListener("click", () => {
   pageChange(contactSection);
-  // navActive.style.backgroundColor = '#fecb46'
   body.style.backgroundColor = "#fecb46";
 });
 
 portfolioLink.addEventListener("click", () => {
   pageChange(portfolioSection);
-  // navActive.style.backgroundColor = '#27bfd5'
   body.style.backgroundColor = "#27bfd5";
 });
 
@@ -99,9 +96,9 @@ const animate = () => {
     high.classList.toggle("takeflight");
   })
   skillsTitle.classList.toggle("visible")
-  // icons.forEach((icon) => {
-  //     icon.classList.toggle('upward')
-  //   })
+  icons.forEach((icon) => {
+      icon.classList.toggle('skillsAfter')
+    })
   
 }
 

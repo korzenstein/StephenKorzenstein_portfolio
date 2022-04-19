@@ -401,9 +401,10 @@ img {
 .iconSpansHome {
   width: 1.4rem;
   display: inline-block;
-  opacity: 1;
+  opacity: none;
   position: relative;
   cursor: pointer;
+  color: rgba(0, 0, 0, 0);
   -webkit-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
 }
@@ -415,6 +416,60 @@ img {
   position: absolute;
   top: -1.1rem;
   left: 0;
+}
+
+.react::after {
+  content: "react.js";
+  color: inherit;
+  position: absolute;
+  top: -1.1rem;
+  left: 1.22rem;
+  opacity: inherit;
+  cursor: default;
+}
+
+.js::after {
+  content: "javascript";
+  color: inherit;
+  position: absolute;
+  top: -1.1rem;
+  left: 1.25rem;
+  opacity: inherit;
+  cursor: default;
+}
+
+.css::after {
+  content: "css";
+  color: inherit;
+  position: absolute;
+  top: -1.1rem;
+  left: 1.23rem;
+  opacity: inherit;
+  cursor: default;
+}
+
+.html::after {
+  content: "html";
+  color: inherit;
+  position: absolute;
+  top: -1.1rem;
+  left: 1.25rem;
+  opacity: inherit;
+  cursor: default;
+}
+
+.github::after {
+  content: "github";
+  color: inherit;
+  position: absolute;
+  top: -1.1rem;
+  left: 1.1rem;
+  opacity: inherit;
+  cursor: default;
+}
+
+.skillsAfter {
+  color: rgb(0, 0, 0);
 }
 
 h2 {
@@ -589,9 +644,6 @@ h1 span {
   margin: 0;
 }
 
-.introText {
-  margin-top: -1.3rem;
-}
 .introText .flyaway {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
@@ -614,8 +666,8 @@ h1 span {
 
 .skillsTitle {
   display: inline-block;
-  -webkit-transform: translateX(-3000%);
-          transform: translateX(-3000%);
+  -webkit-transform: translateX(-1000%);
+          transform: translateX(-1000%);
   opacity: 0;
   height: 0%;
   -webkit-transition: all 2.5s ease-in-out;
@@ -627,6 +679,10 @@ h1 span {
   line-height: 1.3rem;
   font-size: 1.2rem;
   font-weight: 600;
+}
+
+.specialText {
+  margin-top: -2.5rem;
 }
 
 .visible {
@@ -850,6 +906,15 @@ a:hover, a:focus {
   .home .introText {
     font-size: 1rem;
   }
+
+  .specialText {
+    margin-top: -0.5rem;
+  }
+}
+@media (max-width: 809px) {
+  .specialText {
+    margin-top: -2.5rem;
+  }
 }
 @media (max-width: 767px) {
   h1 {
@@ -858,7 +923,6 @@ a:hover, a:focus {
 
   .home .introText {
     font-size: 0.9rem;
-    line-height: 1.3rem;
   }
   .home .introText span {
     width: 1rem;
@@ -900,7 +964,7 @@ a:hover, a:focus {
     position: fixed;
     right: -981px;
     z-index: 50;
-    padding: 0 2.4rem;
+    padding: 0 8%;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     width: 100vw;
