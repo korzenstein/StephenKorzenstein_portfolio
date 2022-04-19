@@ -1,8 +1,19 @@
 // Navigation Toggle Button Functionality (from Project 1)
 const nav = document.querySelector(".navigation");
-function navBar() {
-  nav.classList.toggle("navActive");
-}
+const navButtonMain = document.querySelector('.navButtonToggle')
+const navButtonSecondary = document.querySelector('.navButton')
+// function navBar() {
+//   nav.classList.toggle("navActive");
+// }
+navButtonMain.addEventListener("click", () => {
+  nav.classList.add("navActive")
+})
+navButtonSecondary.addEventListener("click", () => {
+  nav.classList.remove("navActive")
+})
+
+
+
 
 // Sections
 const homeSection = document.querySelector(".home");
@@ -26,19 +37,19 @@ const pageChange = (section) => {
 homeLink.addEventListener("click", () => {
   pageChange(homeSection);
   // navActive.style.backgroundColor = '#f8c2cc'
-  body.style.backgroundColor = '#f8c2cc'
+  body.style.backgroundColor = "#f8c2cc";
 });
 
 contactLink.addEventListener("click", () => {
   pageChange(contactSection);
   // navActive.style.backgroundColor = '#fecb46'
-  body.style.backgroundColor = '#fecb46'
+  body.style.backgroundColor = "#fecb46";
 });
 
 portfolioLink.addEventListener("click", () => {
   pageChange(portfolioSection);
   // navActive.style.backgroundColor = '#27bfd5'
-  body.style.backgroundColor = '#27bfd5'
+  body.style.backgroundColor = "#27bfd5";
 });
 
 // Portfolio container
@@ -66,7 +77,35 @@ projLabels.forEach((bttn) => {
 });
 
 // (() => {
-  
+
 // })();
 
-// Under the hood hovers
+// Flyaway / Takeflight animations
+
+const flyaway = document.querySelectorAll(".flyaway");
+const highlight = document.querySelectorAll(".highlight");
+const introText = document.querySelector(".introText");
+
+
+const icons = document.querySelectorAll(".iconSpansHome");
+const skillsTitle = document.querySelector(".skillsTitle");
+
+const animate = () => {
+  
+  flyaway.forEach((fly) => {
+    fly.classList.toggle("takeflight");
+  })
+  highlight.forEach((high) => {
+    high.classList.toggle("takeflight");
+  })
+  skillsTitle.classList.toggle("visible")
+  // icons.forEach((icon) => {
+  //     icon.classList.toggle('upward')
+  //   })
+  
+}
+
+
+icons.forEach((icon) => {
+  icon.addEventListener("click", animate);
+});

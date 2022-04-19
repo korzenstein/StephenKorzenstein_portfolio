@@ -80,12 +80,13 @@
   // Navigation
   .navigation {
     position: fixed;
-    transform: translateY(100);
+    // transform: translateY(100);
     right: -981px;
     z-index: 50;    
-    padding: 0 2rem;
+    padding: 0 2.4rem;
     transition: all 0.3s;
-    width: 480px;
+    // width: 480px;
+    width: 100vw;
     height: 100vh;
     ul {
       display: flex;
@@ -137,6 +138,8 @@
   }
 
 .navActive {
+    margin-top: -1.7rem;
+    padding-top: 1.65rem;
     right: 0px;
     background-color: rgb(248, 194, 204, 0.9);
 }
