@@ -71,8 +71,9 @@ img {
     content: "react.js";
     color: inherit;
     position: absolute;
-    top: -1.1rem;
-    left: 1.22rem;
+    // transform: translateY(200px);
+    transform: translateX(50%);
+    top: -1.21rem;
     opacity: inherit;
     cursor: default;
   }
@@ -83,8 +84,8 @@ img {
     content: "javascript";
     color: inherit;
     position: absolute;
-        top: -1.1rem;
-    left: 1.25rem;
+    top: -1.1rem;
+    transform: translateX(40%);
     opacity: inherit;
     cursor: default;
   }
@@ -95,8 +96,8 @@ img {
     content: "css";
     color: inherit;
     position: absolute;
-        top: -1.1rem;
-    left: 1.23rem;
+    top: -1.1rem;
+    transform: translateX(105%);
     opacity: inherit;
     cursor: default;
   }
@@ -108,7 +109,7 @@ img {
     color: inherit;
     position: absolute;
     top: -1.1rem;
-        left: 1.25rem;
+    transform: translateX(80%);
     opacity: inherit;
     cursor: default;
   }
@@ -119,8 +120,8 @@ img {
     content: "github";
     color: inherit;
     position: absolute;
-    top: -1.1rem;
-    left: 1.1rem;
+    top: -1.2rem;
+    transform: translateX(50%);
     opacity: inherit;
     cursor: default;
   }
@@ -167,6 +168,4 @@ h2 {
 }
 
 
-.openGraph {
-  display: none;
-}
+ 

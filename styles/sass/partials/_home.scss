@@ -20,12 +20,15 @@
   display: flex;
   flex-direction: row;
 
+
   .homeContainer {
     display: flex;
     flex-direction: row;
 
     .homeText {
       width: 65%;
+      display: flex;
+      flex-direction: column;
     }
 
     .heroImg {
@@ -117,9 +120,6 @@ transform: translateX(-1000%);
   
 }
 
-// .specialText {
-//     margin-top: -2.5rem
-// }
 .visible {
     transform: translateX(0%);
   height: 100;

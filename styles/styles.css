@@ -422,8 +422,9 @@ img {
   content: "react.js";
   color: inherit;
   position: absolute;
-  top: -1.1rem;
-  left: 1.22rem;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  top: -1.21rem;
   opacity: inherit;
   cursor: default;
 }
@@ -433,7 +434,8 @@ img {
   color: inherit;
   position: absolute;
   top: -1.1rem;
-  left: 1.25rem;
+  -webkit-transform: translateX(40%);
+          transform: translateX(40%);
   opacity: inherit;
   cursor: default;
 }
@@ -443,7 +445,8 @@ img {
   color: inherit;
   position: absolute;
   top: -1.1rem;
-  left: 1.23rem;
+  -webkit-transform: translateX(105%);
+          transform: translateX(105%);
   opacity: inherit;
   cursor: default;
 }
@@ -453,7 +456,8 @@ img {
   color: inherit;
   position: absolute;
   top: -1.1rem;
-  left: 1.25rem;
+  -webkit-transform: translateX(80%);
+          transform: translateX(80%);
   opacity: inherit;
   cursor: default;
 }
@@ -462,8 +466,9 @@ img {
   content: "github";
   color: inherit;
   position: absolute;
-  top: -1.1rem;
-  left: 1.1rem;
+  top: -1.2rem;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
   opacity: inherit;
   cursor: default;
 }
@@ -489,10 +494,6 @@ h2 {
   margin: 0;
   border-radius: 1px;
   text-shadow: -12px 12px 9.8px rgba(254, 203, 72, 0.7), 11px -11.1px 7.3px rgb(254, 203, 72), -18.1px -27.3px 30px rgb(254, 203, 72);
-}
-
-.openGraph {
-  display: none;
 }
 
 .navigation ul {
@@ -578,6 +579,13 @@ h1 span {
 }
 .home .homeContainer .homeText {
   width: 65%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .home .homeContainer .heroImg {
   width: 30%;
