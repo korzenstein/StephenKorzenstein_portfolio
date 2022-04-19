@@ -1,7 +1,7 @@
 @media (max-width: 1092px) {
   .home {
     h2 {
-      margin-bottom: 0;
+      margin-bottom: 1rem;
     }
   }
   
@@ -30,23 +30,12 @@
 
     }
   }
-
-  // .home {
-  //   .specialText {
-  //     p {
-  //       font-size: 10rem;
-  //       line-height: 1.22rem;
-  
-  //     }
-  //   }
-  // }
-
 }
 
 @media (max-width: 809px) {
   .home {
     h2 {
-      margin-bottom: 0;
+      margin-bottom: 0.8rem;
     }
   }
   
@@ -126,14 +115,13 @@
   // Navigation
   .navigation {
     position: fixed;
-    // transform: translateY(100);
     right: -981px;
     z-index: 50;    
-    padding: 0 8%;
+    padding: 0 7.6%;
     transition: all 0.3s;
-    // width: 480px;
     width: 100vw;
     height: 100vh;
+    
     ul {
       display: flex;
       align-items: flex-end;
@@ -236,8 +224,20 @@
   }
 
   .contact {
+
+    .socials {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+    }
+
+    .contactText {
+      p {
+        margin: 0;
+        font-size: 0.9rem;
+      }
+    }
     .imgContainer {
-      top: -1rem;
+      top: 3rem;
     }
   }
 

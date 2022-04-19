@@ -1,6 +1,10 @@
 .contact {
     .contactText {
         display: flex;
+        p {
+            margin-top: 0.5rem;
+            
+        }
         
     }
 
@@ -42,7 +46,7 @@
         }
     }
     .imgContainer {
-        width: 40%;
+        width: 38%;
         margin-left: auto;
         position: absolute;
         right: 0;

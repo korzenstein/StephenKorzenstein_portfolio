@@ -34,19 +34,35 @@ const pageChange = (section) => {
   nav.classList.toggle("navActive");
 };
 
+const mediaQuery = window.matchMedia('(min-width: 640px)')
+
+
+
 homeLink.addEventListener("click", () => {
   pageChange(homeSection);
   body.style.backgroundColor = "#f8c2cc";
+  
+  if (mediaQuery.matches) {
+  nav.style.backgroundColor = "248, 194, 204, 0.5";
+}
 });
 
 contactLink.addEventListener("click", () => {
   pageChange(contactSection);
   body.style.backgroundColor = "#fecb46";
+
+  if (mediaQuery.matches) {
+  nav.style.backgroundColor = "254, 203, 70, 0.5";
+}
 });
 
 portfolioLink.addEventListener("click", () => {
   pageChange(portfolioSection);
   body.style.backgroundColor = "#27bfd5";
+
+  if (mediaQuery.matches) {
+  nav.style.backgroundColor = "39, 191, 213, 0.5";
+}
 });
 
 // Portfolio container
