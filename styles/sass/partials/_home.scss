@@ -55,10 +55,6 @@
   width: 100%;
 }
 
-.flex {
-  display: flex;
-}
-
 .active {
   display: flex;
   order: 0;
@@ -86,10 +82,7 @@
 }
 
 .introText {
-  // position: relative;
-  // transition: all 1.8s ease-in-out;
-// margin-top: 1rem;
-
+  margin: 0;
   .flyaway {
     // position: static;
     transform: translateY(0%);
@@ -105,22 +98,17 @@
   }
 }
 
-.upward {
-  // position: absolute;
-  // top: 1px;
-  transform: translateY(-30%);
-}
-
 .skillsTitle {
-//   display: none;
+display: none;
 display: inline-block;
 transform: translateX(-1000%);
   opacity: 0;
   height: 0%;
   transition: all 2.5s ease-in-out;
+  
   h4 {
     padding: 0;
-    margin: 0.5rem 0;
+    margin: 0.5rem 0 0 0;
     line-height: 1.3rem;
     font-size: 1.2rem;
     font-weight: 600;
@@ -129,9 +117,9 @@ transform: translateX(-1000%);
   
 }
 
-.specialText {
-    margin-top: -2.5rem
-}
+// .specialText {
+//     margin-top: -2.5rem
+// }
 .visible {
     transform: translateX(0%);
   height: 100;

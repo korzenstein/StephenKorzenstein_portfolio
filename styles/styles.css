@@ -65,7 +65,7 @@ h5 {
 p {
   font-family: "DeVinne";
   font-size: 1.2rem;
-  line-height: 1.5rem;
+  line-height: 1.55rem;
 }
 
 ul,
@@ -491,6 +491,10 @@ h2 {
   text-shadow: -12px 12px 9.8px rgba(254, 203, 72, 0.7), 11px -11.1px 7.3px rgb(254, 203, 72), -18.1px -27.3px 30px rgb(254, 203, 72);
 }
 
+.openGraph {
+  display: none;
+}
+
 .navigation ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -606,12 +610,6 @@ h1 span {
   width: 100%;
 }
 
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .active {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -644,6 +642,9 @@ h1 span {
   margin: 0;
 }
 
+.introText {
+  margin: 0;
+}
 .introText .flyaway {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
@@ -659,12 +660,8 @@ h1 span {
   visibility: hidden;
 }
 
-.upward {
-  -webkit-transform: translateY(-30%);
-          transform: translateY(-30%);
-}
-
 .skillsTitle {
+  display: none;
   display: inline-block;
   -webkit-transform: translateX(-1000%);
           transform: translateX(-1000%);
@@ -675,14 +672,10 @@ h1 span {
 }
 .skillsTitle h4 {
   padding: 0;
-  margin: 0.5rem 0;
+  margin: 0.5rem 0 0 0;
   line-height: 1.3rem;
   font-size: 1.2rem;
   font-weight: 600;
-}
-
-.specialText {
-  margin-top: -2.5rem;
 }
 
 .visible {
@@ -890,6 +883,11 @@ a:hover, a:focus {
   border-bottom: 2px solid black;
 }
 
+@media (max-width: 1092px) {
+  .home h2 {
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 960px) {
   h1 {
     font-size: 2.6rem;
@@ -899,21 +897,18 @@ a:hover, a:focus {
     gap: 1rem;
   }
 
-  h2 {
+  .home h2 {
     font-size: 1.4rem;
+    margin-bottom: 1.6rem;
   }
 
   .home .introText {
     font-size: 1rem;
   }
-
-  .specialText {
-    margin-top: -0.5rem;
-  }
 }
 @media (max-width: 809px) {
-  .specialText {
-    margin-top: -2.5rem;
+  .home h2 {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 767px) {
@@ -958,6 +953,11 @@ a:hover, a:focus {
 @media (max-width: 640px) {
   .header .wrapper {
     margin-top: 1.7rem;
+  }
+
+  .home .specialText p {
+    font-size: 0.85rem;
+    line-height: 1.22rem;
   }
 
   .navigation {
@@ -1031,10 +1031,6 @@ a:hover, a:focus {
     padding-top: 1.65rem;
     right: 0px;
     background-color: rgba(248, 194, 204, 0.9);
-  }
-
-  .home .introText {
-    font-size: 0.82rem;
   }
 
   .portfolio h2 {
