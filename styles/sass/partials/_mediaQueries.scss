@@ -3,6 +3,10 @@
     h2 {
       margin-bottom: 1rem;
     }
+
+    .introText{
+      line-height: 1.45rem
+    }
   }
   
 }
@@ -28,6 +32,21 @@
     .introText {
             font-size: 1rem;
 
+    }
+
+  }
+
+  .portfolioContainer {
+    max-height: 370px;
+    .portfolioDisplay {
+      .project {
+        .content {
+          p {
+            font-size: 0.88rem;
+            line-height: 1.24rem
+          }
+        }
+      }
     }
   }
 }
@@ -66,30 +85,30 @@
   }
 
 
-  .portfolio {
-    h2 {
-      margin-bottom: 1.5rem;
-    }
-    .portfolioContainer {
-      .portfolioDisplay {
-        .project {
-          flex-direction: column;
-          .imgContainer {
-            display: none;
+  // .portfolio {
+  //   h2 {
+  //     margin-bottom: 1.5rem;
+  //   }
+  //   .portfolioContainer {
+  //     .portfolioDisplay {
+  //       .project {
+  //         flex-direction: column;
+  //         .imgContainer {
+  //           display: none;
 
-          }
-          .content {
-            width: 100%;
-            margin-left: 0;
-            p {
-              font-size: 1rem;
-            }
-          }
+  //         }
+  //         .content {
+  //           width: 100%;
+  //           margin-left: 0;
+  //           p {
+  //             font-size: 1rem;
+  //           }
+  //         }
           
-        }
-      }
-    }
-  }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 @media (max-width: 640px) {
@@ -181,21 +200,58 @@
 
 
 // Portfolio
+// .portfolio {
+//   h2 {
+//     margin-bottom: 1.3rem;
+//   }
+//   .portfolioContainer {
+//     .portfolioDisplay {
+//       // padding: 0.5rem;
+//       .project {
+//         flex-direction: column;
+//         .content {
+//           width: 100%;
+//           p {
+//             font-size: 0.9rem;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 .portfolio {
   h2 {
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.5rem;
   }
+
   .portfolioContainer {
     .portfolioDisplay {
-      // padding: 0.5rem;
       .project {
         flex-direction: column;
+
+        .imgContainer {
+          display: none;
+
+        }
+
         .content {
           width: 100%;
+          margin-left: 0;
+          .links {
+            padding-right: 0.24rem;
+            margin-left: auto;
+          } 
+          .made {
+            padding-right: 0.24rem;
+            margin-top: 0.5rem;
+            margin-left: auto;
+          }
+
           p {
-            font-size: 0.9rem;
+            font-size: 1rem;
           }
         }
+
       }
     }
   }

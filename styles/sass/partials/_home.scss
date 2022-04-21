@@ -85,6 +85,7 @@
 
 .introText {
   margin: 0;
+  line-height: 1.7rem;
   .flyaway {
     // position: static;
     transform: translateY(0%);
@@ -94,11 +95,7 @@
   }
 
   .takeflight {
-    // transform: translateX(-930%);
-    // opacity: 0.8;
-    // visibility: hidden;
     filter: blur(19px);
-
   }
 }
 
@@ -127,19 +124,3 @@ transform: translateX(-500%);
   display: inline-block;
   opacity: 1;
 }
-
-// .one {
-// }
-// .two {
-// }
-// .three {
-// }
-// .four {
-// }
-// .five {
-// }
-// .six {
-// }
-// .seven {
-// }
-

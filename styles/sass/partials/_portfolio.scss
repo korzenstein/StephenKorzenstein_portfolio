@@ -61,6 +61,30 @@
                 width: 60%;
                 margin-left: 1.2rem;
                 transition: all 0.1s ease-in-out;
+
+
+                .contentDetails {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 9%;
+
+                    .made {
+                        display: flex;
+                        white-space: nowrap;
+                    }
+
+                    .links {
+                        display: flex;
+                        white-space: nowrap;
+                        gap: 1.5rem;
+                    }
+
+
+
+
+                }
                 h4 {
                     font-size: 1.1rem;
                     padding: 0;

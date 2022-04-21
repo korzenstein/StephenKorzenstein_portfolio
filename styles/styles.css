@@ -447,7 +447,7 @@ img {
 }
 
 .css::after {
-  content: "css";
+  content: "css3";
   color: inherit;
   position: absolute;
   top: -1.1rem;
@@ -457,7 +457,7 @@ img {
 }
 
 .html::after {
-  content: "html";
+  content: "html5";
   color: inherit;
   position: absolute;
   top: -1.1rem;
@@ -655,6 +655,7 @@ h1 span {
 
 .introText {
   margin: 0;
+  line-height: 1.7rem;
 }
 .introText .flyaway {
   -webkit-transform: translateY(0%);
@@ -823,6 +824,33 @@ h1 span {
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
 }
+.portfolioContainer .portfolioDisplay .project .content .contentDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 9%;
+}
+.portfolioContainer .portfolioDisplay .project .content .contentDetails .made {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+}
+.portfolioContainer .portfolioDisplay .project .content .contentDetails .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  white-space: nowrap;
+  gap: 1.5rem;
+}
 .portfolioContainer .portfolioDisplay .project .content h4 {
   font-size: 1.1rem;
   padding: 0;
@@ -899,6 +927,9 @@ a:hover, a:focus {
   .home h2 {
     margin-bottom: 1rem;
   }
+  .home .introText {
+    line-height: 1.45rem;
+  }
 }
 @media (max-width: 960px) {
   h1 {
@@ -916,6 +947,14 @@ a:hover, a:focus {
 
   .home .introText {
     font-size: 1rem;
+  }
+
+  .portfolioContainer {
+    max-height: 370px;
+  }
+  .portfolioContainer .portfolioDisplay .project .content p {
+    font-size: 0.88rem;
+    line-height: 1.24rem;
   }
 }
 @media (max-width: 809px) {
@@ -940,26 +979,6 @@ a:hover, a:focus {
     position: absolute;
     top: -0.8rem;
     left: 0;
-  }
-
-  .portfolio h2 {
-    margin-bottom: 1.5rem;
-  }
-  .portfolio .portfolioContainer .portfolioDisplay .project {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .portfolio .portfolioContainer .portfolioDisplay .project .imgContainer {
-    display: none;
-  }
-  .portfolio .portfolioContainer .portfolioDisplay .project .content {
-    width: 100%;
-    margin-left: 0;
-  }
-  .portfolio .portfolioContainer .portfolioDisplay .project .content p {
-    font-size: 1rem;
   }
 }
 @media (max-width: 640px) {
@@ -1046,7 +1065,7 @@ a:hover, a:focus {
   }
 
   .portfolio h2 {
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.5rem;
   }
   .portfolio .portfolioContainer .portfolioDisplay .project {
     -webkit-box-orient: vertical;
@@ -1054,11 +1073,24 @@ a:hover, a:focus {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .portfolio .portfolioContainer .portfolioDisplay .project .imgContainer {
+    display: none;
+  }
   .portfolio .portfolioContainer .portfolioDisplay .project .content {
     width: 100%;
+    margin-left: 0;
+  }
+  .portfolio .portfolioContainer .portfolioDisplay .project .content .links {
+    padding-right: 0.24rem;
+    margin-left: auto;
+  }
+  .portfolio .portfolioContainer .portfolioDisplay .project .content .made {
+    padding-right: 0.24rem;
+    margin-top: 0.5rem;
+    margin-left: auto;
   }
   .portfolio .portfolioContainer .portfolioDisplay .project .content p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 @media (max-width: 560px) {
