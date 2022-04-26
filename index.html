@@ -12,21 +12,25 @@
     <meta property="og:image" content="https://www.skorzenstein.com/assets/openGraph.jpeg" />
   </head>
   <body>
+    <!-- BODY CONTAINER begins (to avoid overflow issues) -->
     <div class="bodyContainer">
+
+      <!-- HEADER begins  -->
     <header class="header">
       <div class="wrapper">
         <h1>STEPHEN <span>KORZENSTEIN</span></h1>
-
-        <!-- Navigation toggle on mobile -->
+        <!-- Button to toggle Nav on, mobile -->
         <button class="navButtonToggle">
-          <span class="iconSpans"><img src="./assets/ham2.png" alt="logo"></span>
+          <span class="iconSpans"><img src="./assets/ham2.png" alt="Hamburber  menu to open navigation"></span>
           <span class="sr-only">tap to open menu</span>
         </button>
-        <!-- Navigation -->
+
+        <!-- NAVIGATION begins -->
         <nav class="navigation">
           <ul>
+            <!-- Button to toggle Nav off, mobile -->
             <button class="navButton">
-              <span class="iconSpans"><img src="./assets/ham2.png" alt="logo"></span>
+              <span class="iconSpans"><img src="./assets/ham2.png" alt="Hamburber menu to close navigation"></span>
               <span class="sr-only">tap to close menu</span>
             </button>
             <li><a class="homeLink" href="#">Home</a></li>
@@ -34,13 +38,19 @@
             <li><a class="contactLink" href="#">Contact</a></li>
           </ul>
         </nav>
+        <!-- NAVIGATION ends -->
       </div>
     </header>
+    <!-- HEADER ends -->
+
+    <!-- WRAPPER for MAIN begins -->
     <div class="wrapper">
+
+      <!-- MAIN begins -->
       <main class="main">
-        <!-- Landing page section -->
+
+        <!-- HOME section begins -->
         <section id="home" class="home active">
-          <!-- <div class="wrapper"> -->
           <div class="homeContainer">
             <div class="homeText">
               <h2>Front-End Web Developer</h2>
@@ -55,40 +65,38 @@
                 semantic html</span>
                 <span class="iconSpansHome html"><img src="./assets/html.png" alt="html5 icon" /></span><span class="flyaway"> and
                 easy to follow css + sass</span>
-                <span class="iconSpansHome css"><img src="./assets/css.png" alt="css icon" /></span> <span class="flyaway">to
+                <span class="iconSpansHome css"><img src="./assets/css.png" alt="Css3 icon" /></span> <span class="flyaway">to
                 sculpt <span class="highlight">user-friendly</span> digital spaces. 
-                Collaborating in teams, my process is guided by command line, clear comminication and github </span><span class="iconSpansHome github"><img src="./assets/github.png" alt="github icon"/></span><span class="flyaway"> best practices. 
+                Collaborating in teams, my process is guided by command line, clear comminication and github</span><span class="iconSpansHome github"><img src="./assets/github.png" alt="Github icon"/></span><span class="flyaway"> best practices. 
                 I'm driven to</span><span class="highlight">problem solve</span><span class="flyaway"> thorny questions and find joy in helping others bring complex technical visions to life with
-                React </span><span class="iconSpansHome react"><img src="./assets/atom.png" alt="atom"/></span><span class="flyaway"> and vanilla Javascript </span><span class="iconSpansHome js"><img src="./assets/curlyBraces.svg" alt="Curly braces"
+                React </span><span class="iconSpansHome react"><img src="./assets/atom.png" alt="React atom icon"/></span><span class="flyaway"> and vanilla Javascript </span><span class="iconSpansHome js"><img src="./assets/curlyBraces.svg" alt="Curly braces"
                 /></span>
               </p>
               </div>
             </div>
-
             <div class="heroImg">
-              <img src="./assets/Larry_5.png" alt="Friendly wave" />
+              <img src="./assets/larry.png" alt="Friendly wave from a cartoon man" />
             </div>
           </div>
-          <!-- </div> -->
         </section>
+        <!-- HOME section ends -->
 
-        <!-- Portfolio section -->
+        <!-- PORTFOLIO section begins -->
         <section id="portfolio" class="portfolio">
           <h2>Portfolio</h2>
           <div class="portfolioContainer">
             <div class="portfolioDisplay">
               <div class="project one">
-                <!-- Project One - Under the sea -->
+                <!-- PROJECT ONE - Under the sea -->
                 <div class="imgContainer">
-                  <a href="https://underthesea2022.netlify.app/"><img src="./assets/underTheSea.png" alt="under the sea website preview" /></a>
+                  <a href="https://underthesea2022.netlify.app/"><img src="./assets/underTheSea.png" alt="Under the Sea website preview" /></a>
                 </div>
                 <div class="content">
                   <h4>Under the Sea</h4>
                   <p>
                     A responsive, beautiful website built as a proof of concept
                     for an aquarium, featuring an intricate layout powered by
-                    sass with a touch of javascript.
-                    
+                    sass with a touch of javascript.  
                   </p>
                   <div class="contentDetails">
                     <div class="made">
@@ -122,10 +130,10 @@
                   </div>
                 </div>
               </div>
-              <!-- Project Two - Quiztionary -->
+              <!-- PROJECT TWO - Quiztionary -->
               <div class="project two">
                 <div class="imgContainer">
-                  <a href="https://quiztionary.netlify.app/"><img src="./assets/quiztionary.png" alt="quiztionary website preview" /></a>       
+                  <a href="https://quiztionary.netlify.app/"><img src="./assets/quiztionary.png" alt="Quiztionary website preview" /></a>       
                 </div>
                 <div class="content">
                     <h4>Quiztionary</h4>
@@ -169,10 +177,10 @@
                   </div>
                 </div>
               </div>
-              <!-- Project Three - Calculator -->
+              <!-- PROJECT THREE - Calculator -->
               <div class="project three">
                 <div class="imgContainer">
-                  <a href="https://calc3theme.netlify.app/"><img src="./assets/calc.png" alt="3 theme calculator website preview" /></a>
+                  <a href="https://calc3theme.netlify.app/"><img src="./assets/calc.png" alt="3 Theme Calculator website preview" /></a>
                   
                 </div>
                 <div class="content">
@@ -213,10 +221,10 @@
                   </div>
                 </div>
               </div>
-              <!-- Project Four - Galerie LOCK -->
+              <!-- PROJECT FOUR - Galerie LOCK -->
               <div class="project four">
                 <div class="imgContainer">
-                  <a href="https://www.galerielock.com/"><img src="./assets/galerieLock.png" alt="galerie Lock website preview" /></a>
+                  <a href="https://www.galerielock.com/"><img src="./assets/galerieLock.png" alt="Galerie Lock website preview" /></a>
                   
                 </div>
                 <div class="content">
@@ -278,19 +286,13 @@
               <label for="projLock" id="four" class="projLabel">galerie LOCK</label>
               <input type="radio" name="project" id="projLock">
               </li>
-<!--  
-              <button class="projButton" id="one">under the sea</button>
-              <button class="projButton" id="two">quiztionary</button>
-              <button class="projButton" id="three">3 theme calc</button>
-              <button class="projButton" id="four">galerie LOCK</button> -->
             </ul>
           </div>
-          <!-- </div> -->
         </section>
+        <!-- PORTFOLIO section ends -->
 
-        <!-- Contact section -->
+        <!-- CONTACT section begins -->
         <section id="contact" class="contact">
-          <!-- <div class="wrapper"> -->
           <h2>Contact</h2>
           <div class="contactText">
             <p>
@@ -302,37 +304,40 @@
           <div class="socials">
           <ul>
             <li>
-              skorzenstein (at) gmail (dot) com
+             skorzenstein (at) gmail (dot) com
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/skorzenstein/"><span><img src="./assets/linkedin.png" alt="" /></span></a>
+              <a href="https://www.linkedin.com/in/skorzenstein/"><span><img src="./assets/linkedin.png" alt="Linkedin Icon - link to Stephen Korzenstein's LinkedIn Page" /></span></a>
               
             </li>
             <li>
-              <a href="https://twitter.com/SKorzenstein"><span><img src="./assets/twitter.png" alt="" /></span></a>
+              <a href="https://twitter.com/SKorzenstein"><span><img src="./assets/twitter.png" alt="Twitter Icon - link to Stephen Korzenstein's Twitter Page" /></span></a>
               
             </li>
             <li>
-              <a href="https://github.com/korzenstein"><span><img src="./assets/github2.png" alt="" /></span></a>
+              <a href="https://github.com/korzenstein"><span><img src="./assets/github2.png" alt="Linkedin Icon - link to Stephen Korzenstein's Github" /></span></a>
               
             </li>
             
           </ul>
           <div class="imgContainer">
-              <img src="./assets/coffeeMug.png" alt="">
+              <img src="./assets/coffeeMug.png" alt="Coffee mug with steam">
             </div>
             
             </div>
-          <!-- </div> -->
         </section>
+        <!-- CONTACT section ends -->
       </main>
+      <!-- MAIN ends -->
     </div>
+    <!-- WRAPPER ends -->
+    <!-- FOOTER begins -->
     <footer class="footer">
       <div class="wrapper">
         <p>designed + developed by Stephen Korzenstein</p>
-
       </div>
     </footer>
+    <!-- FOOTER ends -->
     <script src="./scripts/main.js"></script>
   </body>
   </div>

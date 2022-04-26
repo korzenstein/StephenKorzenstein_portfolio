@@ -1,10 +1,8 @@
-// Navigation Toggle Button Functionality (from Project 1)
+// Navigation toggle button functionality on mobile
 const nav = document.querySelector(".navigation");
 const navButtonMain = document.querySelector('.navButtonToggle')
 const navButtonSecondary = document.querySelector('.navButton')
-// function navBar() {
-//   nav.classList.toggle("navActive");
-// }
+
 navButtonMain.addEventListener("click", () => {
   nav.classList.add("navActive")
 })
@@ -12,19 +10,18 @@ navButtonSecondary.addEventListener("click", () => {
   nav.classList.remove("navActive")
 })
 
-
-
-
-// Sections
+// Sections declared as variables
 const homeSection = document.querySelector(".home");
 const contactSection = document.querySelector(".contact");
 const portfolioSection = document.querySelector(".portfolio");
 const body = document.querySelector(".bodyContainer");
-// const navActive = document.querySelector(".navActive");
-// Links
+// Links declared as variables
 const homeLink = document.querySelector(".homeLink");
 const portfolioLink = document.querySelector(".portfolioLink");
 const contactLink = document.querySelector(".contactLink");
+
+
+// Functionality to change background color and section 
 
 const pageChange = (section) => {
   homeSection.classList.remove("active");
@@ -35,7 +32,6 @@ const pageChange = (section) => {
 };
 
 const mediaQuery = window.matchMedia('(min-width: 640px)')
-
 
 
 homeLink.addEventListener("click", () => {
@@ -65,41 +61,29 @@ portfolioLink.addEventListener("click", () => {
 }
 });
 
-// Portfolio container
+// Functionality to change Projects on Portfolio section
 
 const projLabels = document.querySelectorAll(".projLabel");
 const projects = document.querySelectorAll(".project");
 
 projLabels.forEach((bttn) => {
   bttn.addEventListener("click", () => {
-    // console.log(bttn.id)
     let chosen = bttn.id;
-    console.log(chosen);
-    // let whatToDisplay = [...projects].filter(p => p.classList.contains(chosen))
-    // console.log(whatToDisplay)
     projects.forEach((project) => {
-      console.log(project);
       project.classList.remove("display");
       if (project.classList.contains(chosen)) {
-        // project.classList.add('display')
-        console.log(project.classList);
         project.classList.add("display");
       }
     });
   });
 });
 
-// (() => {
 
-// })();
-
-// Flyaway / Takeflight animations
+// Functionality to blur out surrounding text and isolate icons with name tags 
 
 const flyaway = document.querySelectorAll(".flyaway");
 const highlight = document.querySelectorAll(".highlight");
 const introText = document.querySelector(".introText");
-
-
 const icons = document.querySelectorAll(".iconSpansHome");
 const skillsTitle = document.querySelector(".skillsTitle");
 
@@ -115,9 +99,7 @@ const animate = () => {
   icons.forEach((icon) => {
       icon.classList.toggle('skillsAfter')
     })
-  
 }
-
 
 icons.forEach((icon) => {
   icon.addEventListener("click", animate);

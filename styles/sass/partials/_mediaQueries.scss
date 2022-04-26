@@ -1,3 +1,5 @@
+// Media queries
+
 @media (max-width: 1092px) {
   .home {
     h2 {
@@ -83,32 +85,6 @@
       }
     }
   }
-
-
-  // .portfolio {
-  //   h2 {
-  //     margin-bottom: 1.5rem;
-  //   }
-  //   .portfolioContainer {
-  //     .portfolioDisplay {
-  //       .project {
-  //         flex-direction: column;
-  //         .imgContainer {
-  //           display: none;
-
-  //         }
-  //         .content {
-  //           width: 100%;
-  //           margin-left: 0;
-  //           p {
-  //             font-size: 1rem;
-  //           }
-  //         }
-          
-  //       }
-  //     }
-  //   }
-  // }
 }
 
 @media (max-width: 640px) {
@@ -131,7 +107,6 @@
     }
   }
 
-  // Navigation
   .navigation {
     position: fixed;
     right: -981px;
@@ -154,7 +129,6 @@
   .navButton {
     display: block;
     padding: 0;
-    // margin-top: 60px;
     cursor: pointer;
     width: 1rem;
     height: 1rem;
@@ -197,28 +171,6 @@
     background-color: rgb(248, 194, 204, 0.9);
 }
 
-
-
-// Portfolio
-// .portfolio {
-//   h2 {
-//     margin-bottom: 1.3rem;
-//   }
-//   .portfolioContainer {
-//     .portfolioDisplay {
-//       // padding: 0.5rem;
-//       .project {
-//         flex-direction: column;
-//         .content {
-//           width: 100%;
-//           p {
-//             font-size: 0.9rem;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
 .portfolio {
   h2 {
     margin-bottom: 1.5rem;
@@ -344,7 +296,6 @@
         margin-bottom: 1.4rem;
   }
 
-  // Home section
   .home {
     .homeContainer {
       .homeText {
@@ -370,18 +321,13 @@
   }
   
 
-
-
-
   .portfolio {
     h2 {
       font-size: 1.2rem;
       margin: 0.3rem 0 1rem 0;
     }
 
-    .portfolioContainer {
-      // height: 70vh;
-      
+    .portfolioContainer {      
       .portfolioDisplay {
         padding: 0 0.9rem 0 0 ;
       }

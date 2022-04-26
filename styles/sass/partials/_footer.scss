@@ -1,0 +1,16 @@
+// Footer sytles
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    z-index: 100;
+    display: flex;
+
+    p {
+        font-size: 0.6rem;
+        padding: 0.5rem;
+        margin: 0;
+    }
+}

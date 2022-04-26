@@ -1,98 +1,3 @@
-@font-face {
-  font-family: "Gazpacho";
-  src: url("../fonts/Gazpacho_Regular.ttf");
-  font-weight: normal;
-}
-@font-face {
-  font-family: "Gazpacho";
-  src: url("../fonts/Gazpacho_Black.ttf");
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Gazpacho";
-  src: url("../fonts/Gazpacho_Heavy.ttf");
-  font-weight: 700;
-}
-@font-face {
-  font-family: "DeVinne";
-  src: url("../fonts/DeVinne_Regular.otf");
-  font-weight: normal;
-}
-html {
-  font-size: 125%;
-}
-
-h1,
-h2,
-h3,
-h4,
-blockquote {
-  font-family: "Gazpacho";
-  font-weight: 700;
-}
-
-h1 {
-  font-size: 1.4rem;
-}
-
-h2 {
-  font-size: 2rem;
-  line-height: 2.4rem;
-  margin-bottom: 18px;
-}
-
-h3 {
-  font-size: 2.7rem;
-  line-height: 3rem;
-  margin-bottom: 24px;
-}
-
-h4 {
-  font-size: 1.7rem;
-  line-height: 2rem;
-  margin-bottom: 18px;
-}
-
-h5 {
-  font-size: 0.7rem;
-  font-weight: bold;
-  line-height: 1.2rem;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  margin: 0 0 24px 0;
-}
-
-p {
-  font-family: "DeVinne";
-  font-size: 1.2rem;
-  line-height: 1.55rem;
-}
-
-ul,
-li,
-a,
-input {
-  padding: 0;
-  margin: 0;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  font-family: inherit;
-}
-
-li {
-  font-family: "DeVinne";
-}
-
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -355,6 +260,101 @@ html {
   overflow: hidden;
 }
 
+@font-face {
+  font-family: "Gazpacho";
+  src: url("../fonts/Gazpacho_Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gazpacho";
+  src: url("../fonts/Gazpacho_Black.ttf");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Gazpacho";
+  src: url("../fonts/Gazpacho_Heavy.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "DeVinne";
+  src: url("../fonts/DeVinne_Regular.otf");
+  font-weight: normal;
+}
+html {
+  font-size: 125%;
+}
+
+h1,
+h2,
+h3,
+h4,
+blockquote {
+  font-family: "Gazpacho";
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin-bottom: 18px;
+}
+
+h3 {
+  font-size: 2.7rem;
+  line-height: 3rem;
+  margin-bottom: 24px;
+}
+
+h4 {
+  font-size: 1.7rem;
+  line-height: 2rem;
+  margin-bottom: 18px;
+}
+
+h5 {
+  font-size: 0.7rem;
+  font-weight: bold;
+  line-height: 1.2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  margin: 0 0 24px 0;
+}
+
+p {
+  font-family: "DeVinne";
+  font-size: 1.2rem;
+  line-height: 1.55rem;
+}
+
+ul,
+li,
+a,
+input {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: inherit;
+}
+
+li {
+  font-family: "DeVinne";
+}
+
 .bodyContainer {
   background-color: #f8c2cc;
   -webkit-transition: all 0.3s ease-in-out;
@@ -426,77 +426,13 @@ img {
   opacity: 0.5;
 }
 
-.react::after {
-  content: "react.js";
-  color: inherit;
-  position: absolute;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
-  top: -1.21rem;
-  cursor: default;
+a {
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
-
-.js::after {
-  content: "javascript";
-  color: inherit;
-  position: absolute;
-  top: -1.1rem;
-  -webkit-transform: translateX(40%);
-          transform: translateX(40%);
-  cursor: default;
-}
-
-.css::after {
-  content: "css3";
-  color: inherit;
-  position: absolute;
-  top: -1.1rem;
-  -webkit-transform: translateX(105%);
-          transform: translateX(105%);
-  cursor: default;
-}
-
-.html::after {
-  content: "html5";
-  color: inherit;
-  position: absolute;
-  top: -1.1rem;
-  -webkit-transform: translateX(80%);
-          transform: translateX(80%);
-  cursor: default;
-}
-
-.github::after {
-  content: "github";
-  color: inherit;
-  position: absolute;
-  top: -1.2rem;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
-  cursor: default;
-}
-
-.skillsAfter {
-  color: rgb(0, 0, 0);
-}
-
-h2 {
-  border-bottom: 2px black solid;
-  display: inline-block;
-  color: #231f20;
-  line-height: 1.8rem;
-  padding-bottom: 0.65rem;
-}
-
-.highlight {
-  -webkit-transition: all 1.8s ease-in-out;
-  transition: all 1.8s ease-in-out;
-  background: linear-gradient(104deg, rgba(254, 203, 72, 0) 0.9%, rgb(254, 203, 72) 2.4%, rgba(254, 203, 72, 0.5) 5.8%, rgba(254, 203, 72, 0.1) 93%, rgba(254, 203, 72, 0.7) 96%, rgba(254, 203, 72, 0) 98%), linear-gradient(183deg, rgba(254, 203, 72, 0) 0%, rgba(254, 203, 72, 0.3) 7.9%, rgba(254, 203, 72, 0) 15%);
-  padding: 0.1rem 0.2rem;
-  -webkit-box-decoration-break: clone;
-  margin: 0;
-  border-radius: 1px;
-  text-shadow: -12px 12px 9.8px rgba(254, 203, 72, 0.7), 11px -11.1px 7.3px rgb(254, 203, 72), -18.1px -27.3px 30px rgb(254, 203, 72);
+a:hover, a:focus {
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid black;
 }
 
 .navigation ul {
@@ -637,22 +573,6 @@ h1 span {
           transform: translateX(0%);
 }
 
-.footer {
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-  z-index: 100;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.footer p {
-  font-size: 0.6rem;
-  padding: 0.5rem;
-  margin: 0;
-}
-
 .introText {
   margin: 0;
   line-height: 1.7rem;
@@ -694,6 +614,79 @@ h1 span {
   height: 100;
   display: inline-block;
   opacity: 1;
+}
+
+.react::after {
+  content: "react.js";
+  color: inherit;
+  position: absolute;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  top: -1.21rem;
+  cursor: default;
+}
+
+.js::after {
+  content: "javascript";
+  color: inherit;
+  position: absolute;
+  top: -1.1rem;
+  -webkit-transform: translateX(40%);
+          transform: translateX(40%);
+  cursor: default;
+}
+
+.css::after {
+  content: "css3";
+  color: inherit;
+  position: absolute;
+  top: -1.1rem;
+  -webkit-transform: translateX(105%);
+          transform: translateX(105%);
+  cursor: default;
+}
+
+.html::after {
+  content: "html5";
+  color: inherit;
+  position: absolute;
+  top: -1.1rem;
+  -webkit-transform: translateX(80%);
+          transform: translateX(80%);
+  cursor: default;
+}
+
+.github::after {
+  content: "github";
+  color: inherit;
+  position: absolute;
+  top: -1.2rem;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  cursor: default;
+}
+
+.skillsAfter {
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  border-bottom: 2px black solid;
+  display: inline-block;
+  color: #231f20;
+  line-height: 1.8rem;
+  padding-bottom: 0.65rem;
+}
+
+.highlight {
+  -webkit-transition: all 1.8s ease-in-out;
+  transition: all 1.8s ease-in-out;
+  background: linear-gradient(104deg, rgba(254, 203, 72, 0) 0.9%, rgb(254, 203, 72) 2.4%, rgba(254, 203, 72, 0.5) 5.8%, rgba(254, 203, 72, 0.1) 93%, rgba(254, 203, 72, 0.7) 96%, rgba(254, 203, 72, 0) 98%), linear-gradient(183deg, rgba(254, 203, 72, 0) 0%, rgba(254, 203, 72, 0.3) 7.9%, rgba(254, 203, 72, 0) 15%);
+  padding: 0.1rem 0.2rem;
+  -webkit-box-decoration-break: clone;
+  margin: 0;
+  border-radius: 1px;
+  text-shadow: -12px 12px 9.8px rgba(254, 203, 72, 0.7), 11px -11.1px 7.3px rgb(254, 203, 72), -18.1px -27.3px 30px rgb(254, 203, 72);
 }
 
 .contact .contactText {
@@ -914,13 +907,20 @@ h1 span {
   position: absolute;
 }
 
-a {
-  -webkit-transition: all 0.4s ease-in;
-  transition: all 0.4s ease-in;
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-a:hover, a:focus {
-  padding-bottom: 0.3rem;
-  border-bottom: 2px solid black;
+.footer p {
+  font-size: 0.6rem;
+  padding: 0.5rem;
+  margin: 0;
 }
 
 @media (max-width: 1092px) {
