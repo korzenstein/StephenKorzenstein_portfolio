@@ -66,9 +66,10 @@ portfolioLink.addEventListener("click", () => {
 const projLabels = document.querySelectorAll(".projLabel");
 const projects = document.querySelectorAll(".project");
 
-projLabels.forEach((bttn) => {
+const projectChooser = () => {
+  projLabels.forEach((bttn) => {
   bttn.addEventListener("click", () => {
-    let chosen = bttn.id;
+    let chosen = bttn.id
     projects.forEach((project) => {
       project.classList.remove("display");
       if (project.classList.contains(chosen)) {
@@ -77,6 +78,13 @@ projLabels.forEach((bttn) => {
     });
   });
 });
+}
+
+
+projectChooser()
+window.onload=function(){
+  document.getElementById("four").click();
+};
 
 
 // Functionality to blur out surrounding text and isolate icons with name tags 
@@ -104,3 +112,4 @@ const animate = () => {
 icons.forEach((icon) => {
   icon.addEventListener("click", animate);
 });
+
