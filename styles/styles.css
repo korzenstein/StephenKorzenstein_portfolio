@@ -968,10 +968,10 @@ h2 {
     max-height: auto;
   }
   .portfolio .portfolioContainer .portfolioDisplay .project .content h4 {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
   }
   .portfolio .portfolioContainer .portfolioDisplay .project .content p {
-    font-size: 0.78rem;
+    font-size: 0.82rem;
     line-height: 1.22rem;
   }
 }
@@ -1016,7 +1016,7 @@ h2 {
     gap: 1rem;
   }
   .portfolioContainer .buttonContainer .projButton .projLabel {
-    font-size: 0.7rem;
+    font-size: 0.71rem;
     text-align: right;
   }
 
@@ -1141,7 +1141,7 @@ h2 {
     max-height: 440px;
   }
   .portfolio .portfolioContainer .buttonContainer .projButton .projLabel {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
   }
 
   .contact .socials {
