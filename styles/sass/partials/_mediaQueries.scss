@@ -100,13 +100,15 @@
       .top, 
       .bottom {
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         gap: 1rem;
         // width: calc(100% / 2)
       }
       .projButton {
+
                 .projLabel {
                   font-size: 0.7rem;
+                          text-align: right;
                 }
       }
       }
@@ -245,6 +247,7 @@
       height: none;
       max-height: 440px;
       // gap: 1.6rem;
+    
     
       .buttonContainer {
         // display: flex;

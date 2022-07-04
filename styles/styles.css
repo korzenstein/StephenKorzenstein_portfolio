@@ -772,7 +772,7 @@ h2 {
           justify-content: center;
 }
 .portfolioContainer .portfolioDisplay {
-  background-image: url(../assets/portBack.png);
+  background-image: url(../assets/portBackLight1.png);
   width: 100%;
   min-height: 230px;
   display: -webkit-box;
@@ -1013,13 +1013,11 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     gap: 1rem;
   }
   .portfolioContainer .buttonContainer .projButton .projLabel {
     font-size: 0.7rem;
+    text-align: right;
   }
 
   .links {
