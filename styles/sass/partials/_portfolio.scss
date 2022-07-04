@@ -1,135 +1,138 @@
-
 .portfolio {
-
-    // background-image: url(../assets/portBack.png);
-    background-size: cover;
-    h2 {
-        margin: 1rem 0 1.2rem 0;
-    }
+  // background-image: url(../assets/portBack.png);
+  background-size: cover;
+  h2 {
+    margin: 1rem 0 1.2rem 0;
+  }
 }
 
-
 .portfolioContainer {
+  width: 100%;
+  max-height: 372px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .portfolioDisplay {
+    background-image: url(../assets/portBack.png);
     width: 100%;
-    max-height: 320px;
+    min-height: 230px;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content:center;
-    .portfolioDisplay {
-        background-image: url(../assets/portBack.png);
-        width: 100%;
-        min-height: 230px;
+    justify-content: center;
+    margin-bottom: 1rem;
+    .project {
+      opacity: 0;
+      visibility: hidden;
+      width: 0%;
+      height: 0%;
+      order: 1;
+      z-index: 0;
+      display: flex;
+      border: none;
+      align-items: center;
+      transition: all 1s ease-in-out;
+      transform: translateX(1900%);
+
+      .imgContainer {
+        max-width: 30%;
+        min-width: 250px;
+        margin-right: 1.5rem;
+      }
+      .content {
         display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 1rem;
-        .project {
-            opacity: 0;
-            visibility: hidden;
-            width: 0%;
-            height: 0%;
-            order: 1;
-            z-index: 0;
+        flex-direction: column;
+        width: 60%;
+        margin-left: 1.2rem;
+        transition: all 0.1s ease-in-out;
+
+        .contentDetails {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: wrap;
+          gap: 9%;
+
+          .made {
             display: flex;
-            border: none;
-            align-items: center;
-            transition: all 1s ease-in-out;
-            transform: translateX(1900%);            
+            white-space: nowrap;
+          }
 
-            .imgContainer {
-                max-width: 30%;
-                min-width: 250px;
-                margin-right: 1.5rem;
-            }
-            .content {
-                display: flex;
-                flex-direction: column;
-                width: 60%;
-                margin-left: 1.2rem;
-                transition: all 0.1s ease-in-out;
-
-
-                .contentDetails {
-                    display: flex;
-                    justify-content: flex-start;
-                    align-items: center;
-                    flex-wrap: wrap;
-                    gap: 9%;
-
-                    .made {
-                        display: flex;
-                        white-space: nowrap;
-                    }
-
-                    .links {
-                        display: flex;
-                        white-space: nowrap;
-                        gap: 1.5rem;
-                    }
-
-
-
-
-                }
-                h4 {
-                    font-size: 1.1rem;
-                    padding: 0;
-                    margin: 0;
-                    
-                }
-                p {
-                    font-size: 1rem;
-                    margin: 0.3rem 0;
-                }
-            }
-        }
-
-
-        .display {
-            opacity: 1;
+          .link {
             display: flex;
-            height: 90%;
-            width: 100%;
-            order: 0;
-            z-index: 20;
-            visibility: visible;
-            transition: all 1s ease-in-out;
-            transform: translateX(0%);
-        }
-    }
-    .buttonContainer {
-        display: flex;
-        justify-content: space-between;
-        gap: 0.5rem 1rem;
-        width: 80%;
-        height: 25%;
-        .projButton {
-            padding: 0;
-            .projLabel {
-                font-family: 'Gazpacho';
-                font-weight: 700;
-                display: inline-block;
-                background: none;
-                border: none;
-                cursor: pointer;
-                font-size: 0.92rem;
-                position: relative;
-                padding: 0.3rem;
-                text-align: center;
-                opacity: 1;
-                transition: all 0.2s ease-in-out;
-
-                &:hover,
+            white-space: nowrap;
+            gap: 1.5rem;
+            &:hover,
+            &:focus {
+              padding-bottom: 0;
+              text-decoration: underline;
+              border-bottom: none;
+            }
+          }
+          a:hover{
+            &:hover,
                 &:focus {
-                    opacity: 0.5;
+                    padding-bottom: 0;
+                    text-decoration: underline;
+                    border-bottom: none;
                 }
-            }
-            input[type="radio"] {
-                display: none;
-                position: absolute;
-            }
+          }
         }
+        h4 {
+          font-size: 1.1rem;
+          padding: 0;
+          margin: 0;
+        }
+        p {
+          font-size: 1rem;
+          margin: 0.3rem 0;
+        }
+      }
     }
 
+    .display {
+      opacity: 1;
+      display: flex;
+      height: 90%;
+      width: 100%;
+      order: 0;
+      z-index: 20;
+      visibility: visible;
+      transition: all 1s ease-in-out;
+      transform: translateX(0%);
+    }
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem 1rem;
+    width: 80%;
+    height: 25%;
+    .projButton {
+      padding: 0;
+      .projLabel {
+        font-family: "Gazpacho";
+        font-weight: 700;
+        display: inline-block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 0.8rem;
+        position: relative;
+        padding: 0.3rem;
+        text-align: center;
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+
+        &:hover,
+        &:focus {
+          opacity: 0.5;
+        }
+      }
+      input[type="radio"] {
+        display: none;
+        position: absolute;
+      }
+    }
+  }
 }

@@ -38,18 +38,21 @@
 
   }
 
-  .portfolioContainer {
-    max-height: 370px;
-    .portfolioDisplay {
-      .project {
-        .content {
-          p {
-            font-size: 0.83rem;
-            line-height: 1.24rem
+  .portfolio {
+    .portfolioContainer {
+        max-height: auto;
+    
+        .portfolioDisplay {
+          .project {
+            .content {
+              p {
+                font-size: 0.71rem;
+                line-height: 1.22rem
+              }
+            }
           }
         }
       }
-    }
   }
 }
 
@@ -192,6 +195,7 @@
           .links {
             padding-right: 0.24rem;
             margin-left: auto;
+            display: flex;
           } 
           .made {
             padding-right: 0.24rem;
@@ -199,9 +203,7 @@
             margin-left: auto;
           }
 
-          p {
-            font-size: 1rem;
-          }
+          
         }
 
       }
@@ -214,7 +216,8 @@
   .portfolio {
     .portfolioContainer {
       height: none;
-      gap: 1.6rem;
+      max-height: 320px;
+      // gap: 1.6rem;
     
       .buttonContainer {
         display: flex;
@@ -224,7 +227,7 @@
         .projButton {
           display: block;
           .projLabel {
-            font-size: 0.8rem;
+            font-size: 0.71rem;
           }
         }
       }
@@ -249,6 +252,9 @@
     }
   }
 
+  .footer {
+    display: none;
+  }
   
 }
 
@@ -276,6 +282,9 @@
       }
     }
   }
+
+  
+  
 }
 
 @media (max-width: 380px) {
