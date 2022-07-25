@@ -811,6 +811,10 @@ h2 {
   max-width: 30%;
   min-width: 250px;
   margin-right: 1.5rem;
+  border-radius: 25px;
+}
+.portfolioContainer .portfolioDisplay .project .imgContainer img {
+  border-radius: 25px;
 }
 .portfolioContainer .portfolioDisplay .project .content {
   display: -webkit-box;
@@ -950,20 +954,16 @@ h2 {
   h1 {
     font-size: 2.6rem;
   }
-
   .navigation ul {
     gap: 1rem;
   }
-
   .home h2 {
     font-size: 1.4rem;
     margin-bottom: 1.6rem;
   }
-
   .home .introText {
     font-size: 1rem;
   }
-
   .portfolio .portfolioContainer {
     max-height: auto;
   }
@@ -984,7 +984,6 @@ h2 {
   h1 {
     font-size: 2.1rem;
   }
-
   .home .introText {
     font-size: 0.9rem;
   }
@@ -998,7 +997,6 @@ h2 {
     top: -0.8rem;
     left: 0;
   }
-
   .portfolioContainer .buttonContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1019,7 +1017,6 @@ h2 {
     font-size: 0.71rem;
     text-align: right;
   }
-
   .links {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1030,12 +1027,10 @@ h2 {
   .header .wrapper {
     margin-top: 1.7rem;
   }
-
   .home .specialText p {
     font-size: 0.78rem;
     line-height: 1.22rem;
   }
-
   .navigation {
     position: fixed;
     right: -981px;
@@ -1062,7 +1057,6 @@ h2 {
   .navigation ul li a {
     font-size: 2rem;
   }
-
   .navButton {
     display: block;
     padding: 0;
@@ -1081,7 +1075,6 @@ h2 {
     top: 1rem;
     left: -5px;
   }
-
   .navButtonToggle {
     display: block;
     margin-left: auto;
@@ -1101,14 +1094,12 @@ h2 {
     top: 1rem;
     left: -5px;
   }
-
   .navActive {
     margin-top: -1.7rem;
     padding-top: 1.65rem;
     right: 0px;
     background-color: rgba(248, 194, 204, 0.9);
   }
-
   .portfolio h2 {
     margin-bottom: 1.5rem;
   }
@@ -1143,7 +1134,6 @@ h2 {
   .portfolio .portfolioContainer .buttonContainer .projButton .projLabel {
     font-size: 0.7rem;
   }
-
   .contact .socials {
     margin-top: 2rem;
     font-size: 0.9rem;
@@ -1155,7 +1145,6 @@ h2 {
   .contact .imgContainer {
     top: 3rem;
   }
-
   .footer {
     display: none;
   }
@@ -1184,18 +1173,15 @@ h2 {
   .header .wrapper {
     margin-top: 1.4rem;
   }
-
   h1 {
     font-size: 1.5rem;
   }
-
   h2 {
     font-size: 1.2rem;
     margin: 0.3rem 0;
     line-height: 1.5rem;
     margin-bottom: 1.4rem;
   }
-
   .home .homeContainer .homeText .introText {
     width: 80vw;
   }
@@ -1210,7 +1196,6 @@ h2 {
     left: -2rem;
     min-width: 55px;
   }
-
   .portfolio h2 {
     font-size: 1.2rem;
     margin: 0.3rem 0 1rem 0;

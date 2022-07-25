@@ -83,7 +83,7 @@ const projectChooser = () => {
 
 projectChooser()
 window.onload=function(){
-  document.getElementById("six").click();
+  document.getElementById("three").click();
 };
 
 
